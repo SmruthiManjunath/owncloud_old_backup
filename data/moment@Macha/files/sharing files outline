@@ -1,0 +1,7 @@
+send file name and get file path and path_hash. 
+get the file name and the userid and account and retrieve the file metadata from the filecache database
+Send to client and the client will send the path_hash 
+update the filecache database and make an entry into the database with the path_hash and path but with the other user's details
+file_map
+ - logical path hash
+ - physical path hash

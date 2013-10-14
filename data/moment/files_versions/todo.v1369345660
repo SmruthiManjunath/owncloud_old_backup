@@ -1,0 +1,17 @@
+changes made to friendshipcoontroller
+	- Added function android() 
+changes made to routes.php
+	- Added route to normal route /android
+
+
+
+Dynamically getting username and url
+	- parse the account details and get the details
+
+Your Friends
+	- Fetch from the database. Write database query for that
+	- Add friends send to server that will take care of updating the table
+	- Accept friend requests. Write database query to fetch the pending requests.
+
+
+

@@ -1,0 +1,28 @@
+Friends - two way friendship between owncloud users
+	  facebook sync
+	  limit sharing
+
+Multiinstabe - network of owncloud instances - each user hosted on one onwcloud instance and can share with users on other owncloud instance
+wsend a friend rewuest if both accept then share files
+
+file sharing linited to friends 
+	- check if friend app enabled
+	- check user is a friend before sharing the file
+
+Facebook integration feature
+	- import facebook friends into owncloud
+	-facebook api; fetch facebook user's identifier
+	- User to login
+	- grant owncloud to access the user's personal information (name, id, friends)
+	- Match the facebook ids's of users on owncloud database with the id's of the friendlist got from facebook
+
+
+
+
+------------------------------------------------------
+Add friends - on owncloud - implies people only on owncloud
+	    - Accept Friend request - people on owncloud who have sent you a friendship request
+	    - Your friends - all of them on your friend list
+
+
+

@@ -1,0 +1,744 @@
+{"app":"PHP","message":"mysql_close(): 46 is not a valid MySQL-Link resource at \/var\/www\/owncloud\/lib\/setup.php#277","level":2,"time":1367367139}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment\/files\/strings.xml: unable to determine file format","level":2,"time":1367607950}
+{"app":"PHP","message":"Invalid argument supplied for foreach() at \/var\/www\/owncloud\/lib\/installer.php#415","level":2,"time":1367608015}
+{"app":"PHP","message":"Invalid argument supplied for foreach() at \/var\/www\/owncloud\/lib\/installer.php#418","level":2,"time":1367608015}
+{"app":"PHP","message":"SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'appid' cannot be null at \/var\/www\/owncloud\/lib\/db.php#965","level":4,"time":1367608015}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment\/files\/shared: Could not open \"\/var\/www\/owncloud\/data\/moment\/files\/shared\" (does not exist, or is not a file)","level":2,"time":1367608060}
+{"app":"PHP","message":"Invalid argument supplied for foreach() at \/var\/www\/owncloud\/lib\/installer.php#415","level":2,"time":1367608071}
+{"app":"PHP","message":"Invalid argument supplied for foreach() at \/var\/www\/owncloud\/lib\/installer.php#418","level":2,"time":1367608071}
+{"app":"PHP","message":"SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'appid' cannot be null at \/var\/www\/owncloud\/lib\/db.php#965","level":4,"time":1367608071}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment\/files\/shared\/sharek: Could not open \"\/var\/www\/owncloud\/data\/moment\/files\/shared\/sharek\" (does not exist, or is not a file)","level":2,"time":1367608096}
+{"app":"PHP","message":"Invalid argument supplied for foreach() at \/var\/www\/owncloud\/lib\/installer.php#415","level":2,"time":1367608100}
+{"app":"PHP","message":"Invalid argument supplied for foreach() at \/var\/www\/owncloud\/lib\/installer.php#418","level":2,"time":1367608100}
+{"app":"PHP","message":"SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'appid' cannot be null at \/var\/www\/owncloud\/lib\/db.php#965","level":4,"time":1367608100}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment\/files\/shared\/picasa-cache.1: unable to determine file format","level":2,"time":1367608167}
+{"app":"PHP","message":"Invalid argument supplied for foreach() at \/var\/www\/owncloud\/lib\/installer.php#415","level":2,"time":1367608183}
+{"app":"PHP","message":"Invalid argument supplied for foreach() at \/var\/www\/owncloud\/lib\/installer.php#418","level":2,"time":1367608183}
+{"app":"PHP","message":"SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'appid' cannot be null at \/var\/www\/owncloud\/lib\/db.php#965","level":4,"time":1367608183}
+{"app":"friends","message":"CSRF check failed","level":3,"time":1367692248}
+{"app":"friends","message":"CSRF check failed","level":3,"time":1367692248}
+{"app":"friends","message":"CSRF check failed","level":3,"time":1367705477}
+{"app":"friends","message":"CSRF check failed","level":3,"time":1367705477}
+{"app":"friends","message":"hi","level":3,"time":1367706493}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367706493}
+{"app":"PHP","message":"opendir(\/var\/www\/owncloud\/data\/smruthi\/cache\/): failed to open dir: No such file or directory at \/var\/www\/owncloud\/lib\/files\/storage\/local.php#40","level":2,"time":1367820011}
+{"app":"PHP","message":"readdir() expects parameter 1 to be resource, boolean given at \/var\/www\/owncloud\/lib\/cache\/file.php#88","level":2,"time":1367820011}
+{"app":"friends","message":"CSRF check failed","level":3,"time":1367890553}
+{"app":"friends","message":"CSRF check failed","level":3,"time":1367890553}
+{"app":"friends","message":"hi","level":3,"time":1367902375}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367902375}
+{"app":"friends","message":"CSRF check failed","level":3,"time":1367956440}
+{"app":"friends","message":"CSRF check failed","level":3,"time":1367956440}
+{"app":"friends","message":"CSRF check failed","level":3,"time":1367956441}
+{"app":"friends","message":"hi","level":3,"time":1367964697}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964697}
+{"app":"friends","message":"hi","level":3,"time":1367964698}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964698}
+{"app":"friends","message":"hi","level":3,"time":1367964698}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964698}
+{"app":"friends","message":"hi","level":3,"time":1367964699}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964699}
+{"app":"friends","message":"hi","level":3,"time":1367964702}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964702}
+{"app":"friends","message":"hi","level":3,"time":1367964703}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964703}
+{"app":"friends","message":"hi","level":3,"time":1367964704}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964704}
+{"app":"friends","message":"hi","level":3,"time":1367964704}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964704}
+{"app":"friends","message":"hi","level":3,"time":1367964705}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964705}
+{"app":"friends","message":"hi","level":3,"time":1367964705}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964705}
+{"app":"friends","message":"hi","level":3,"time":1367964706}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964706}
+{"app":"friends","message":"hi","level":3,"time":1367964706}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964706}
+{"app":"friends","message":"hi","level":3,"time":1367964707}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964707}
+{"app":"friends","message":"hi","level":3,"time":1367964707}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964707}
+{"app":"friends","message":"hi","level":3,"time":1367964708}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964708}
+{"app":"friends","message":"hi","level":3,"time":1367964708}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964708}
+{"app":"friends","message":"hi","level":3,"time":1367964709}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964709}
+{"app":"friends","message":"hi","level":3,"time":1367964710}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964710}
+{"app":"friends","message":"hi","level":3,"time":1367964711}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964711}
+{"app":"friends","message":"hi","level":3,"time":1367964711}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964711}
+{"app":"friends","message":"hi","level":3,"time":1367964712}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964712}
+{"app":"friends","message":"hi","level":3,"time":1367964713}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964713}
+{"app":"friends","message":"hi","level":3,"time":1367964713}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964713}
+{"app":"friends","message":"hi","level":3,"time":1367964713}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964713}
+{"app":"friends","message":"hi","level":3,"time":1367964714}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964714}
+{"app":"friends","message":"hi","level":3,"time":1367964715}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964715}
+{"app":"friends","message":"hi","level":3,"time":1367964715}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964715}
+{"app":"friends","message":"hi","level":3,"time":1367964715}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964715}
+{"app":"friends","message":"hi","level":3,"time":1367964716}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964716}
+{"app":"friends","message":"hi","level":3,"time":1367964716}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964716}
+{"app":"friends","message":"hi","level":3,"time":1367964717}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964717}
+{"app":"friends","message":"hi","level":3,"time":1367964718}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964718}
+{"app":"friends","message":"hi","level":3,"time":1367964718}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964718}
+{"app":"friends","message":"hi","level":3,"time":1367964722}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964722}
+{"app":"friends","message":"hi","level":3,"time":1367964724}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964724}
+{"app":"friends","message":"hi","level":3,"time":1367964725}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964725}
+{"app":"friends","message":"hi","level":3,"time":1367964726}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964726}
+{"app":"friends","message":"hi","level":3,"time":1367964726}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964726}
+{"app":"friends","message":"hi","level":3,"time":1367964729}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964729}
+{"app":"friends","message":"hi","level":3,"time":1367964730}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964730}
+{"app":"friends","message":"hi","level":3,"time":1367964730}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964730}
+{"app":"friends","message":"hi","level":3,"time":1367964730}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964730}
+{"app":"friends","message":"hi","level":3,"time":1367964730}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964730}
+{"app":"friends","message":"hi","level":3,"time":1367964731}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964731}
+{"app":"friends","message":"hi","level":3,"time":1367964731}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964731}
+{"app":"friends","message":"hi","level":3,"time":1367964732}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964732}
+{"app":"friends","message":"hi","level":3,"time":1367964733}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964733}
+{"app":"friends","message":"hi","level":3,"time":1367964734}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964734}
+{"app":"friends","message":"hi","level":3,"time":1367964735}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964735}
+{"app":"friends","message":"hi","level":3,"time":1367964735}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964735}
+{"app":"friends","message":"hi","level":3,"time":1367964736}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964736}
+{"app":"friends","message":"hi","level":3,"time":1367964736}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964736}
+{"app":"friends","message":"hi","level":3,"time":1367964737}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964737}
+{"app":"friends","message":"hi","level":3,"time":1367964737}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964737}
+{"app":"friends","message":"hi","level":3,"time":1367964738}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964738}
+{"app":"friends","message":"hi","level":3,"time":1367964738}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964738}
+{"app":"friends","message":"hi","level":3,"time":1367964738}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964738}
+{"app":"friends","message":"hi","level":3,"time":1367964739}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964739}
+{"app":"friends","message":"hi","level":3,"time":1367964739}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964739}
+{"app":"friends","message":"hi","level":3,"time":1367964739}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964739}
+{"app":"friends","message":"hi","level":3,"time":1367964740}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964740}
+{"app":"friends","message":"hi","level":3,"time":1367964740}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964740}
+{"app":"friends","message":"hi","level":3,"time":1367964740}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964740}
+{"app":"friends","message":"hi","level":3,"time":1367964741}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964741}
+{"app":"friends","message":"hi","level":3,"time":1367964741}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964741}
+{"app":"friends","message":"hi","level":3,"time":1367964741}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964741}
+{"app":"friends","message":"hi","level":3,"time":1367964742}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964742}
+{"app":"friends","message":"hi","level":3,"time":1367964742}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964742}
+{"app":"friends","message":"hi","level":3,"time":1367964742}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964742}
+{"app":"friends","message":"hi","level":3,"time":1367964743}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964743}
+{"app":"friends","message":"hi","level":3,"time":1367964743}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964743}
+{"app":"friends","message":"hi","level":3,"time":1367964744}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964744}
+{"app":"friends","message":"hi","level":3,"time":1367964744}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964744}
+{"app":"friends","message":"hi","level":3,"time":1367964744}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964744}
+{"app":"friends","message":"hi","level":3,"time":1367964745}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964745}
+{"app":"friends","message":"hi","level":3,"time":1367964745}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964745}
+{"app":"friends","message":"hi","level":3,"time":1367964745}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964745}
+{"app":"friends","message":"hi","level":3,"time":1367964746}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964746}
+{"app":"friends","message":"hi","level":3,"time":1367964747}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964747}
+{"app":"friends","message":"hi","level":3,"time":1367964747}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964747}
+{"app":"friends","message":"hi","level":3,"time":1367964748}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964748}
+{"app":"friends","message":"hi","level":3,"time":1367964749}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964749}
+{"app":"friends","message":"hi","level":3,"time":1367964749}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964749}
+{"app":"friends","message":"hi","level":3,"time":1367964750}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964750}
+{"app":"friends","message":"hi","level":3,"time":1367964750}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964750}
+{"app":"friends","message":"hi","level":3,"time":1367964751}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964751}
+{"app":"friends","message":"hi","level":3,"time":1367964751}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964751}
+{"app":"friends","message":"hi","level":3,"time":1367964752}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964752}
+{"app":"friends","message":"hi","level":3,"time":1367964752}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964752}
+{"app":"friends","message":"hi","level":3,"time":1367964752}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964752}
+{"app":"friends","message":"hi","level":3,"time":1367964753}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964753}
+{"app":"friends","message":"hi","level":3,"time":1367964753}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964753}
+{"app":"friends","message":"hi","level":3,"time":1367964753}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964753}
+{"app":"friends","message":"hi","level":3,"time":1367964757}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964757}
+{"app":"friends","message":"hi","level":3,"time":1367964757}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964757}
+{"app":"friends","message":"hi","level":3,"time":1367964758}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964758}
+{"app":"friends","message":"hi","level":3,"time":1367964758}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964758}
+{"app":"friends","message":"hi","level":3,"time":1367964759}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964759}
+{"app":"friends","message":"hi","level":3,"time":1367964759}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964759}
+{"app":"friends","message":"hi","level":3,"time":1367964760}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964760}
+{"app":"friends","message":"hi","level":3,"time":1367964761}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964761}
+{"app":"friends","message":"hi","level":3,"time":1367964763}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964763}
+{"app":"friends","message":"hi","level":3,"time":1367964763}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964763}
+{"app":"friends","message":"hi","level":3,"time":1367964764}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964764}
+{"app":"friends","message":"hi","level":3,"time":1367964765}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964765}
+{"app":"friends","message":"hi","level":3,"time":1367964765}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964765}
+{"app":"friends","message":"hi","level":3,"time":1367964766}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964766}
+{"app":"friends","message":"hi","level":3,"time":1367964766}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964766}
+{"app":"friends","message":"hi","level":3,"time":1367964766}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964766}
+{"app":"friends","message":"hi","level":3,"time":1367964767}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964767}
+{"app":"friends","message":"hi","level":3,"time":1367964767}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964767}
+{"app":"friends","message":"hi","level":3,"time":1367964768}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964768}
+{"app":"friends","message":"hi","level":3,"time":1367964771}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964771}
+{"app":"friends","message":"hi","level":3,"time":1367964772}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964772}
+{"app":"friends","message":"hi","level":3,"time":1367964774}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964774}
+{"app":"friends","message":"hi","level":3,"time":1367964775}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964775}
+{"app":"friends","message":"hi","level":3,"time":1367964777}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964777}
+{"app":"friends","message":"hi","level":3,"time":1367964781}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964781}
+{"app":"friends","message":"hi","level":3,"time":1367964783}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964783}
+{"app":"friends","message":"hi","level":3,"time":1367964784}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964784}
+{"app":"friends","message":"hi","level":3,"time":1367964785}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964785}
+{"app":"friends","message":"hi","level":3,"time":1367964786}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964786}
+{"app":"friends","message":"hi","level":3,"time":1367964786}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964786}
+{"app":"friends","message":"hi","level":3,"time":1367964786}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964786}
+{"app":"friends","message":"hi","level":3,"time":1367964787}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964787}
+{"app":"friends","message":"hi","level":3,"time":1367964788}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964788}
+{"app":"friends","message":"hi","level":3,"time":1367964788}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964788}
+{"app":"friends","message":"hi","level":3,"time":1367964789}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964789}
+{"app":"friends","message":"hi","level":3,"time":1367964789}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964789}
+{"app":"friends","message":"hi","level":3,"time":1367964789}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964789}
+{"app":"friends","message":"hi","level":3,"time":1367964790}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964790}
+{"app":"friends","message":"hi","level":3,"time":1367964790}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964790}
+{"app":"friends","message":"hi","level":3,"time":1367964791}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964791}
+{"app":"friends","message":"hi","level":3,"time":1367964791}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964791}
+{"app":"friends","message":"hi","level":3,"time":1367964792}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964792}
+{"app":"friends","message":"hi","level":3,"time":1367964793}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964793}
+{"app":"friends","message":"hi","level":3,"time":1367964793}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964793}
+{"app":"friends","message":"hi","level":3,"time":1367964793}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964793}
+{"app":"friends","message":"hi","level":3,"time":1367964794}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964794}
+{"app":"friends","message":"hi","level":3,"time":1367964794}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964794}
+{"app":"friends","message":"hi","level":3,"time":1367964794}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964794}
+{"app":"friends","message":"hi","level":3,"time":1367964794}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964794}
+{"app":"friends","message":"hi","level":3,"time":1367964795}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964795}
+{"app":"friends","message":"hi","level":3,"time":1367964795}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964795}
+{"app":"friends","message":"hi","level":3,"time":1367964796}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964796}
+{"app":"friends","message":"hi","level":3,"time":1367964796}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964796}
+{"app":"friends","message":"hi","level":3,"time":1367964797}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964797}
+{"app":"friends","message":"hi","level":3,"time":1367964797}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964797}
+{"app":"friends","message":"hi","level":3,"time":1367964798}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964798}
+{"app":"friends","message":"hi","level":3,"time":1367964799}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964799}
+{"app":"friends","message":"hi","level":3,"time":1367964799}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964799}
+{"app":"friends","message":"hi","level":3,"time":1367964800}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964800}
+{"app":"friends","message":"hi","level":3,"time":1367964800}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964800}
+{"app":"friends","message":"hi","level":3,"time":1367964800}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964800}
+{"app":"friends","message":"hi","level":3,"time":1367964801}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964801}
+{"app":"friends","message":"hi","level":3,"time":1367964801}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964801}
+{"app":"friends","message":"hi","level":3,"time":1367964801}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964801}
+{"app":"friends","message":"hi","level":3,"time":1367964802}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964802}
+{"app":"friends","message":"hi","level":3,"time":1367964802}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964802}
+{"app":"friends","message":"hi","level":3,"time":1367964802}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964802}
+{"app":"friends","message":"hi","level":3,"time":1367964803}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964803}
+{"app":"friends","message":"hi","level":3,"time":1367964803}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964803}
+{"app":"friends","message":"hi","level":3,"time":1367964803}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964803}
+{"app":"friends","message":"hi","level":3,"time":1367964804}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964804}
+{"app":"friends","message":"hi","level":3,"time":1367964804}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964804}
+{"app":"friends","message":"hi","level":3,"time":1367964804}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964804}
+{"app":"friends","message":"hi","level":3,"time":1367964805}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964805}
+{"app":"friends","message":"hi","level":3,"time":1367964805}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964805}
+{"app":"friends","message":"hi","level":3,"time":1367964805}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964805}
+{"app":"friends","message":"hi","level":3,"time":1367964806}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964806}
+{"app":"friends","message":"hi","level":3,"time":1367964806}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964806}
+{"app":"friends","message":"hi","level":3,"time":1367964806}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964806}
+{"app":"friends","message":"hi","level":3,"time":1367964807}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964807}
+{"app":"friends","message":"hi","level":3,"time":1367964807}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964807}
+{"app":"friends","message":"hi","level":3,"time":1367964807}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964807}
+{"app":"friends","message":"hi","level":3,"time":1367964808}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964808}
+{"app":"friends","message":"hi","level":3,"time":1367964808}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964808}
+{"app":"friends","message":"hi","level":3,"time":1367964809}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964809}
+{"app":"friends","message":"hi","level":3,"time":1367964809}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964809}
+{"app":"friends","message":"hi","level":3,"time":1367964809}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964809}
+{"app":"friends","message":"hi","level":3,"time":1367964809}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964809}
+{"app":"friends","message":"hi","level":3,"time":1367964810}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964810}
+{"app":"friends","message":"hi","level":3,"time":1367964810}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964810}
+{"app":"friends","message":"hi","level":3,"time":1367964810}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964810}
+{"app":"friends","message":"hi","level":3,"time":1367964810}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964810}
+{"app":"friends","message":"hi","level":3,"time":1367964811}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964811}
+{"app":"friends","message":"hi","level":3,"time":1367964811}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964811}
+{"app":"friends","message":"hi","level":3,"time":1367964811}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964811}
+{"app":"friends","message":"hi","level":3,"time":1367964812}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964812}
+{"app":"friends","message":"hi","level":3,"time":1367964812}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964812}
+{"app":"friends","message":"hi","level":3,"time":1367964812}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964812}
+{"app":"friends","message":"hi","level":3,"time":1367964813}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964813}
+{"app":"friends","message":"hi","level":3,"time":1367964813}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964813}
+{"app":"friends","message":"hi","level":3,"time":1367964813}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964813}
+{"app":"friends","message":"hi","level":3,"time":1367964813}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964813}
+{"app":"friends","message":"hi","level":3,"time":1367964814}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964814}
+{"app":"friends","message":"hi","level":3,"time":1367964814}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964814}
+{"app":"friends","message":"hi","level":3,"time":1367964814}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964814}
+{"app":"friends","message":"hi","level":3,"time":1367964814}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964814}
+{"app":"friends","message":"hi","level":3,"time":1367964814}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964814}
+{"app":"friends","message":"hi","level":3,"time":1367964815}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964815}
+{"app":"friends","message":"hi","level":3,"time":1367964815}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964815}
+{"app":"friends","message":"hi","level":3,"time":1367964815}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964815}
+{"app":"friends","message":"hi","level":3,"time":1367964815}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964815}
+{"app":"friends","message":"hi","level":3,"time":1367964816}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964816}
+{"app":"friends","message":"hi","level":3,"time":1367964816}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964816}
+{"app":"friends","message":"hi","level":3,"time":1367964816}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964816}
+{"app":"friends","message":"hi","level":3,"time":1367964816}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964816}
+{"app":"friends","message":"hi","level":3,"time":1367964817}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964817}
+{"app":"friends","message":"hi","level":3,"time":1367964817}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964817}
+{"app":"friends","message":"hi","level":3,"time":1367964817}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964817}
+{"app":"friends","message":"hi","level":3,"time":1367964817}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964817}
+{"app":"friends","message":"hi","level":3,"time":1367964818}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964818}
+{"app":"friends","message":"hi","level":3,"time":1367964818}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964818}
+{"app":"friends","message":"hi","level":3,"time":1367964818}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964818}
+{"app":"friends","message":"hi","level":3,"time":1367964819}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964819}
+{"app":"friends","message":"hi","level":3,"time":1367964819}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964819}
+{"app":"friends","message":"hi","level":3,"time":1367964819}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964819}
+{"app":"friends","message":"hi","level":3,"time":1367964820}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964820}
+{"app":"friends","message":"hi","level":3,"time":1367964820}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964820}
+{"app":"friends","message":"hi","level":3,"time":1367964820}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964820}
+{"app":"friends","message":"hi","level":3,"time":1367964820}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964820}
+{"app":"friends","message":"hi","level":3,"time":1367964821}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964821}
+{"app":"friends","message":"hi","level":3,"time":1367964823}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964823}
+{"app":"friends","message":"hi","level":3,"time":1367964824}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367964824}
+{"app":"friends","message":"hi","level":3,"time":1367967925}
+{"app":"friends","message":"CSRF check failed","level":3,"time":1367967925}
+{"app":"friends","message":"hi","level":3,"time":1367978881}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367978881}
+{"app":"friends","message":"hi","level":3,"time":1367984301}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367984301}
+{"app":"friends","message":"hi","level":3,"time":1367985850}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1367985850}
+{"app":"friends","message":"CSRF check failed","level":3,"time":1367997297}
+{"app":"friends","message":"CSRF check failed","level":3,"time":1367997298}
+{"app":"friends","message":"hi","level":3,"time":1368139156}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1368139156}
+{"app":"friends","message":"CSRF check failed","level":3,"time":1368168313}
+{"app":"friends","message":"hi","level":3,"time":1368168677}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1368168677}
+{"app":"friends","message":"hi","level":3,"time":1368168773}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1368168773}
+{"app":"friends","message":"hi","level":3,"time":1368168935}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1368168935}
+{"app":"friends","message":"hi","level":3,"time":1368169528}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1368169528}
+{"app":"friends","message":"hi","level":3,"time":1368169641}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1368169641}
+{"app":"friends","message":"hi","level":3,"time":1368169784}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1368169784}
+{"app":"friends","message":"hi","level":3,"time":1368207379}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1368207379}
+{"app":"friends","message":"hi","level":3,"time":1368207417}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1368207417}
+{"app":"friends","message":"hi","level":3,"time":1368207429}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1368207429}
+{"app":"friends","message":"hi","level":3,"time":1368207782}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1368207782}
+{"app":"friends","message":"hi","level":3,"time":1368207848}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1368207848}
+{"app":"friends","message":"hi","level":3,"time":1368207991}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1368207991}
+{"app":"friends","message":"CSRF check failed","level":3,"time":1368208208}
+{"app":"friends","message":"CSRF check failed","level":3,"time":1368208368}
+{"app":"friends","message":"CSRF check failed","level":3,"time":1368208444}
+{"app":"friends","message":"CSRF check failed","level":3,"time":1368209689}
+{"app":"friends","message":"hi","level":3,"time":1368209754}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1368209754}
+{"app":"friends","message":"hi","level":3,"time":1368210140}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1368210140}
+{"app":"friends","message":"hi","level":3,"time":1368210146}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1368210146}
+{"app":"friends","message":"hi","level":3,"time":1368211179}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1368211179}
+{"app":"friends","message":"hi","level":3,"time":1368307533}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1368307533}
+{"app":"friends","message":"hi","level":3,"time":1368308028}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1368308028}
+{"app":"friends","message":"hi","level":3,"time":1368391165}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1368391165}
+{"app":"friends","message":"hi","level":3,"time":1368470752}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1368470752}
+{"app":"friends","message":"CSRF check failed","level":3,"time":1368674531}
+{"app":"friends","message":"CSRF check failed","level":3,"time":1368674531}
+{"app":"core","message":"unable to read app folder : \/var\/www\/owncloud\/apps2","level":2,"time":1368814504}
+{"app":"core","message":"unable to read app folder : \/var\/www\/owncloud\/apps2","level":2,"time":1368814507}
+{"app":"core","message":"unable to read app folder : \/var\/www\/owncloud\/apps2","level":2,"time":1368814586}
+{"app":"core","message":"unable to read app folder : \/var\/www\/owncloud\/apps2","level":2,"time":1368814589}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment\/files\/: Could not open \"\/var\/www\/owncloud\/data\/moment\/files\/\" (does not exist, or is not a file)","level":2,"time":1368814624}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment\/files\/: Could not open \"\/var\/www\/owncloud\/data\/moment\/files\/\" (does not exist, or is not a file)","level":2,"time":1368814624}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment\/files\/: Could not open \"\/var\/www\/owncloud\/data\/moment\/files\/\" (does not exist, or is not a file)","level":2,"time":1368814624}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment\/files\/shared: Could not open \"\/var\/www\/owncloud\/data\/moment\/files\/shared\" (does not exist, or is not a file)","level":2,"time":1368814624}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment\/files\/shared\/sharek: Could not open \"\/var\/www\/owncloud\/data\/moment\/files\/shared\/sharek\" (does not exist, or is not a file)","level":2,"time":1368814625}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment\/files\/strings.xml: unable to determine file format","level":2,"time":1368814626}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment\/files\/shared\/picasa-cache.1: unable to determine file format","level":2,"time":1368814626}
+{"app":"core","message":"unable to read app folder : \/var\/www\/owncloud\/apps2","level":2,"time":1368815232}
+{"app":"core","message":"unable to read app folder : \/var\/www\/owncloud\/apps2","level":2,"time":1368815235}
+{"app":"core","message":"unable to read app folder : \/var\/www\/owncloud\/apps2","level":2,"time":1368815634}
+{"app":"core","message":"unable to read app folder : \/var\/www\/owncloud\/apps2","level":2,"time":1368815772}
+{"app":"core","message":"unable to read app folder : \/var\/www\/owncloud\/apps2","level":2,"time":1368815774}
+{"app":"core","message":"unable to read app folder : \/var\/www\/owncloud\/apps2","level":2,"time":1368818054}
+{"app":"core","message":"unable to read app folder : \/var\/www\/owncloud\/apps2","level":2,"time":1368818056}
+{"app":"core","message":"unable to read app folder : \/var\/www\/owncloud\/apps2","level":2,"time":1368818363}
+{"app":"core","message":"unable to read app folder : \/var\/www\/owncloud\/apps2","level":2,"time":1368818366}
+{"app":"core","message":"unable to read app folder : \/var\/www\/owncloud\/apps2","level":2,"time":1368819661}
+{"app":"core","message":"unable to read app folder : \/var\/www\/owncloud\/apps2","level":2,"time":1368819664}
+{"app":"core","message":"unable to read app folder : \/var\/www\/owncloud\/apps2","level":2,"time":1368820431}
+{"app":"core","message":"unable to read app folder : \/var\/www\/owncloud\/apps2","level":2,"time":1368820434}
+{"app":"core","message":"unable to read app folder : \/var\/www\/owncloud\/apps2","level":2,"time":1368820468}
+{"app":"core","message":"unable to read app folder : \/var\/www\/owncloud\/apps2","level":2,"time":1368820471}
+{"app":"core","message":"unable to read app folder : \/var\/www\/owncloud\/apps2","level":2,"time":1368821250}
+{"app":"core","message":"unable to read app folder : \/var\/www\/owncloud\/apps2","level":2,"time":1368821253}
+{"app":"core","message":"unable to read app folder : \/var\/www\/owncloud\/apps2","level":2,"time":1368821393}
+{"app":"core","message":"unable to read app folder : \/var\/www\/owncloud\/apps2","level":2,"time":1368821395}
+{"app":"core","message":"unable to read app folder : \/var\/www\/owncloud\/apps2","level":2,"time":1368821547}
+{"app":"core","message":"unable to read app folder : \/var\/www\/owncloud\/apps2","level":2,"time":1368821549}
+{"app":"core","message":"unable to read app folder : \/var\/www\/owncloud\/apps2","level":2,"time":1368821804}
+{"app":"core","message":"unable to read app folder : \/var\/www\/owncloud\/apps2","level":2,"time":1368821807}
+{"app":"search_lucene","message":"failed to extract meta information for \/user1\/files\/file1.txt: unable to determine file format","level":2,"time":1368860931}
+{"app":"friends","message":"CSRF check failed","level":3,"time":1368865050}
+{"app":"friends","message":"CSRF check failed","level":3,"time":1368865146}
+{"app":"friends","message":"CSRF check failed","level":3,"time":1368865284}
+{"app":"friends","message":"CSRF check failed","level":3,"time":1368865343}
+{"app":"friends","message":"CSRF check failed","level":3,"time":1368865409}
+{"app":"friends","message":"CSRF check failed","level":3,"time":1368865631}
+{"app":"friends","message":"CSRF check failed","level":3,"time":1368865643}
+{"app":"friends","message":"CSRF check failed","level":3,"time":1368865812}
+{"app":"friends","message":"CSRF check failed","level":3,"time":1368865815}
+{"app":"friends","message":"CSRF check failed","level":3,"time":1368865816}
+{"app":"friends","message":"CSRF check failed","level":3,"time":1368865817}
+{"app":"friends","message":"CSRF check failed","level":3,"time":1368865817}
+{"app":"friends","message":"CSRF check failed","level":3,"time":1368865823}
+{"app":"friends","message":"CSRF check failed","level":3,"time":1368865824}
+{"app":"friends","message":"CSRF check failed","level":3,"time":1368865825}
+{"app":"friends","message":"CSRF check failed","level":3,"time":1368866375}
+{"app":"friends","message":"CSRF check failed","level":3,"time":1368866453}
+{"app":"friends","message":"CSRF check failed","level":3,"time":1368866552}
+{"app":"friends","message":"hi","level":3,"time":1369209794}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1369209794}
+{"app":"friends","message":"hi","level":3,"time":1369243560}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1369243560}
+{"app":"friends","message":"hi","level":3,"time":1369344070}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1369344070}
+{"app":"files_sharing","message":"File source not found for: \/icon.png","level":3,"time":1369344605}
+{"app":"files_sharing","message":"File source not found for: \/icon.png","level":3,"time":1369344605}
+{"app":"files_sharing","message":"File source not found for: \/icon.png","level":3,"time":1369344605}
+{"app":"mail","message":"Could not execute: \/usr\/sbin\/sendmail","level":3,"time":1369345457}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment\/files\/file1.txt: unable to determine file format","level":2,"time":1369345720}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment\/files\/changesmenu: unable to determine file format","level":2,"time":1369345728}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment\/files\/todo: unable to determine file format","level":2,"time":1369345733}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment\/files\/virtualbox machiine details: unable to determine file format","level":2,"time":1369345737}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment\/files\/str.xml: unable to determine file format","level":2,"time":1369345843}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment\/files\/strfg.xml: unable to determine file format","level":2,"time":1369345925}
+{"app":"search_lucene","message":"need mimetype for content extraction","level":3,"time":1369346741}
+{"app":"friends","message":"User moment@128.111.52.151 does not exist but is in UserFacebookId table as uid.","level":3,"time":1369411330}
+{"app":"friends","message":"User moment@128.111.52.151 does not exist but is in UserFacebookId table as uid.","level":3,"time":1369417842}
+{"app":"friends","message":"User moment@128.111.52.151 does not exist but is in UserFacebookId table as uid.","level":3,"time":1369417897}
+{"app":"friends","message":"User moment@128.111.52.151 does not exist but is in UserFacebookId table as uid.","level":3,"time":1369419808}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/projectdetai: unable to determine file format","level":2,"time":1369723992}
+{"app":"friends","message":"hi","level":3,"time":1369847792}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1369847792}
+{"app":"friends","message":"hi","level":3,"time":1369866983}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1369866983}
+{"app":"search_lucene","message":"failed to extract meta information for \/macha1@Macha\/files\/lab8.c: unable to determine file format","level":2,"time":1370139653}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/README: unable to determine file format","level":2,"time":1370631713}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1370633941}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1370633941}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1370634043}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1370634043}
+{"app":"friends","message":"hi","level":3,"time":1370634045}
+{"app":"friends","message":"Current user is not logged in","level":3,"time":1370634045}
+{"app":"search_lucene","message":"failed to extract meta information for \/ucsb50@UCSB\/files\/fact.c: unable to determine file format","level":2,"time":1371521299}
+{"app":"search_lucene","message":"failed to extract meta information for \/ucsb50@UCSB\/files\/extended_euc.py: unable to determine file format","level":2,"time":1371521312}
+{"app":"search_lucene","message":"failed to extract meta information for \/ucsb50@UCSB\/files\/comment-4.txt: unable to determine file format","level":2,"time":1371534344}
+{"app":"search_lucene","message":"failed to extract meta information for \/macha112@Macha\/files\/f1.txt: unable to determine file format","level":2,"time":1379441143}
+{"app":"search_lucene","message":"need mimetype for content extraction","level":3,"time":1379441164}
+{"app":"search_lucene","message":"failed to extract meta information for \/macha113@Macha\/files\/f1.txt: unable to determine file format","level":2,"time":1379441290}
+{"app":"search_lucene","message":"failed to extract meta information for \/macha113@Macha\/files\/f1.txt: unable to determine file format","level":2,"time":1379441304}
+{"app":"search_lucene","message":"failed to extract meta information for \/macha113@Macha\/files\/f2.txt: unable to determine file format","level":2,"time":1379441306}
+{"app":"search_lucene","message":"failed to extract meta information for \/macha113@Macha\/files\/f2.txt: unable to determine file format","level":2,"time":1379441334}
+{"app":"search_lucene","message":"failed to extract meta information for \/macha114@Macha\/files\/f3.txt: unable to determine file format","level":2,"time":1379441545}
+{"app":"search_lucene","message":"failed to extract meta information for \/macha114@Macha\/files\/f3.txt: unable to determine file format","level":2,"time":1379446394}
+{"app":"search_lucene","message":"failed to extract meta information for \/macha111@Macha\/files\/f4.txt: unable to determine file format","level":2,"time":1379532932}
+{"app":"search_lucene","message":"failed to extract meta information for \/macha111@Macha\/files\/f4.txt: unable to determine file format","level":2,"time":1379532936}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/f1: unable to determine file format","level":2,"time":1380847769}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/f1: unable to determine file format","level":2,"time":1380847802}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/AndroidCalculatorAPKTest.pdf: PDF parsing not enabled in this version of getID3() [1.9.3-20111213]","level":2,"time":1380849916}
+{"app":"search_lucene","message":"failed to extract meta information for \/macha7@Macha\/files\/MastersProjectPaper-RoughDraft.pdf: PDF parsing not enabled in this version of getID3() [1.9.3-20111213]","level":2,"time":1380850041}
+{"app":"search_lucene","message":"failed to extract meta information for \/macha7@Macha\/files\/AndroidCalculatorTest.pdf: PDF parsing not enabled in this version of getID3() [1.9.3-20111213]","level":2,"time":1380850064}
+{"app":"files_sharing","message":"File source not found for: \/shr","level":3,"time":1380876159}
+{"app":"files_sharing","message":"File source not found for: \/shr","level":3,"time":1380876159}
+{"app":"files_sharing","message":"File source not found for: \/shr","level":3,"time":1380876159}
+{"app":"files_sharing","message":"File source not found for: \/shr","level":3,"time":1380876159}
+{"app":"files_sharing","message":"File source not found for: \/shr","level":3,"time":1380876159}
+{"app":"files_sharing","message":"File source not found for: \/.","level":3,"time":1380876159}
+{"app":"files_sharing","message":"File source not found for: \/shr","level":3,"time":1380876159}
+{"app":"files_sharing","message":"File source not found for: \/shr","level":3,"time":1380876159}
+{"app":"files_sharing","message":"File source not found for: \/shr","level":3,"time":1380876159}
+{"app":"files_sharing","message":"File source not found for: \/sgh","level":3,"time":1380876168}
+{"app":"files_sharing","message":"File source not found for: \/sgh","level":3,"time":1380876168}
+{"app":"files_sharing","message":"File source not found for: \/sgh","level":3,"time":1380876168}
+{"app":"files_sharing","message":"File source not found for: \/sgh","level":3,"time":1380876168}
+{"app":"files_sharing","message":"File source not found for: \/sgh","level":3,"time":1380876168}
+{"app":"files_sharing","message":"File source not found for: \/.","level":3,"time":1380876168}
+{"app":"files_sharing","message":"File source not found for: \/sgh","level":3,"time":1380876168}
+{"app":"files_sharing","message":"File source not found for: \/sgh","level":3,"time":1380876168}
+{"app":"files_sharing","message":"File source not found for: \/sgh","level":3,"time":1380876168}
+{"app":"files_sharing","message":"File source not found for: \/dir1","level":3,"time":1380876190}
+{"app":"files_sharing","message":"File source not found for: \/dir1","level":3,"time":1380876190}
+{"app":"files_sharing","message":"File source not found for: \/dir1","level":3,"time":1380876190}
+{"app":"files_sharing","message":"File source not found for: \/dir1","level":3,"time":1380876190}
+{"app":"files_sharing","message":"File source not found for: \/dir1","level":3,"time":1380876190}
+{"app":"files_sharing","message":"File source not found for: \/.","level":3,"time":1380876190}
+{"app":"files_sharing","message":"File source not found for: \/dir1","level":3,"time":1380876190}
+{"app":"files_sharing","message":"File source not found for: \/dir1","level":3,"time":1380876190}
+{"app":"files_sharing","message":"File source not found for: \/dir1","level":3,"time":1380876190}
+{"app":"files_sharing","message":"File source not found for: \/shr","level":3,"time":1380876419}
+{"app":"files_sharing","message":"File source not found for: \/shr","level":3,"time":1380876419}
+{"app":"files_sharing","message":"File source not found for: \/shr","level":3,"time":1380876419}
+{"app":"search_lucene","message":"need mimetype for content extraction","level":3,"time":1380876419}
+{"app":"files_sharing","message":"File source not found for: \/sgh","level":3,"time":1380876422}
+{"app":"files_sharing","message":"File source not found for: \/sgh","level":3,"time":1380876422}
+{"app":"files_sharing","message":"File source not found for: \/sgh","level":3,"time":1380876422}
+{"app":"search_lucene","message":"need mimetype for content extraction","level":3,"time":1380876422}
+{"app":"files_sharing","message":"File source not found for: \/dir1","level":3,"time":1380876427}
+{"app":"files_sharing","message":"File source not found for: \/dir1","level":3,"time":1380876427}
+{"app":"files_sharing","message":"File source not found for: \/dir1","level":3,"time":1380876427}
+{"app":"search_lucene","message":"need mimetype for content extraction","level":3,"time":1380876427}
+{"app":"search_lucene","message":"failed to extract meta information for \/macha9@Macha\/files\/jacobian_modified.py: unable to determine file format","level":2,"time":1380876554}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/folder1: Could not open \"\/var\/www\/owncloud\/data\/moment@Macha\/files\/folder1\" (does not exist, or is not a file)","level":2,"time":1381006031}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/folder1\/f1: unable to determine file format","level":2,"time":1381006038}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/folder1\/f1: unable to determine file format","level":2,"time":1381006147}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/folder1\/clientout.txt: unable to determine file format","level":2,"time":1381039869}
+{"app":"search_lucene","message":"failed to extract meta information for \/macha9@Macha\/files\/client_udp.sh: unable to determine file format","level":2,"time":1381115625}
+{"app":"search_lucene","message":"failed to extract meta information for \/macha9@Macha\/files\/welcome.txt: unable to determine file format","level":2,"time":1381115646}
+{"app":"search_lucene","message":"failed to extract meta information for \/macha9@Macha\/files\/folder12: Could not open \"\/var\/www\/owncloud\/data\/macha9@Macha\/files\/folder12\" (does not exist, or is not a file)","level":2,"time":1381126682}
+{"app":"search_lucene","message":"failed to extract meta information for \/macha9@Macha\/files\/folder12\/f2: unable to determine file format","level":2,"time":1381126715}
+{"app":"search_lucene","message":"failed to extract meta information for \/macha9@Macha\/files\/folder12\/f2: unable to determine file format","level":2,"time":1381126741}
+{"app":"search_lucene","message":"failed to extract meta information for \/macha9@Macha\/files\/folder12\/server_tcp.sh: unable to determine file format","level":2,"time":1381126756}
+{"app":"search_lucene","message":"failed to extract meta information for \/macha9@Macha\/files\/folder17: Could not open \"\/var\/www\/owncloud\/data\/macha9@Macha\/files\/folder17\" (does not exist, or is not a file)","level":2,"time":1381126777}
+{"app":"search_lucene","message":"failed to extract meta information for \/macha9@Macha\/files\/folder17\/f13: unable to determine file format","level":2,"time":1381126835}
+{"app":"search_lucene","message":"failed to extract meta information for \/macha9@Macha\/files\/folder17\/f13: unable to determine file format","level":2,"time":1381126838}
+{"app":"search_lucene","message":"failed to extract meta information for \/macha9@Macha\/files\/folder17\/10.1.1.122.3190 (1).pdf: PDF parsing not enabled in this version of getID3() [1.9.3-20111213]","level":2,"time":1381126843}
+{"app":"search_lucene","message":"failed to extract meta information for \/macha9@Macha\/files\/folder17\/f4: Could not open \"\/var\/www\/owncloud\/data\/macha9@Macha\/files\/folder17\/f4\" (does not exist, or is not a file)","level":2,"time":1381129662}
+{"app":"search_lucene","message":"failed to extract meta information for \/macha9@Macha\/files\/folder17\/f4\/hw8.pdf: PDF parsing not enabled in this version of getID3() [1.9.3-20111213]","level":2,"time":1381129674}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/maca.ps: unable to determine file format","level":2,"time":1381204615}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/folderq: Could not open \"\/var\/www\/owncloud\/data\/moment@Macha\/files\/folderq\" (does not exist, or is not a file)","level":2,"time":1381204670}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/folderq\/DSA.eps: unable to determine file format","level":2,"time":1381207254}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/folderq\/folderz: Could not open \"\/var\/www\/owncloud\/data\/moment@Macha\/files\/folderq\/folderz\" (does not exist, or is not a file)","level":2,"time":1381259180}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/folderq\/folderz\/things: unable to determine file format","level":2,"time":1381259191}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/log.txt: unable to determine file format","level":2,"time":1381270786}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/paper.ps: unable to determine file format","level":2,"time":1381270790}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/comment-4.txt: unable to determine file format","level":2,"time":1381270795}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/sharing files outline: unable to determine file format","level":2,"time":1381308323}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/proj1.c: unable to determine file format","level":2,"time":1381308335}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/folder1\/p3test2.c: unable to determine file format","level":2,"time":1381656706}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/folder1\/f3.txt: unable to determine file format","level":2,"time":1381656757}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/folder1\/f3.txt: unable to determine file format","level":2,"time":1381656785}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/folder1\/f3.txt: unable to determine file format","level":2,"time":1381690381}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/folderq\/1381358468994.jpg: unable to determine file format","level":2,"time":1381695460}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/folderq\/folderz\/sharing files outline~: unable to determine file format","level":2,"time":1381695486}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/folder1\/sharing files outline~: unable to determine file format","level":2,"time":1381697026}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/crud.txt: unable to determine file format","level":2,"time":1381697334}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/fgh.txt: unable to determine file format","level":2,"time":1381697807}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/stuff.txt: unable to determine file format","level":2,"time":1381697820}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/so.txt: unable to determine file format","level":2,"time":1381699911}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/ah.txt: unable to determine file format","level":2,"time":1381699919}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/folderq\/sh.txt: unable to determine file format","level":2,"time":1381699932}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/cool.txt: unable to determine file format","level":2,"time":1381707709}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/fqw.txt: unable to determine file format","level":2,"time":1381708247}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/quo.txt: unable to determine file format","level":2,"time":1381708251}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/Zn.txt: unable to determine file format","level":2,"time":1381708255}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/she.txt: unable to determine file format","level":2,"time":1381708259}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/CloudDatabases.pdf: PDF parsing not enabled in this version of getID3() [1.9.3-20111213]","level":2,"time":1381708265}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/ah.txt: unable to determine file format","level":2,"time":1381708291}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/folderq\/sh.txt: unable to determine file format","level":2,"time":1381708302}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/folder1\/f3.txt: unable to determine file format","level":2,"time":1381708306}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/folder1\/f3.txt: unable to determine file format","level":2,"time":1381708401}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/crud.txt: unable to determine file format","level":2,"time":1381708797}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/folderq\/sh.txt: unable to determine file format","level":2,"time":1381723242}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/fqw.txt: unable to determine file format","level":2,"time":1381723709}
+{"app":"search_lucene","message":"failed to extract meta information for \/moment@Macha\/files\/so.txt: unable to determine file format","level":2,"time":1381723712}
+{"app":"search_lucene","message":"failed to extract meta information for \/macha9@Macha\/files\/fig3.eps: unable to determine file format","level":2,"time":1381723747}
+{"app":"search_lucene","message":"failed to extract meta information for \/macha9@Macha\/files\/dependency.eps: unable to determine file format","level":2,"time":1381724097}
+{"app":"search_lucene","message":"failed to extract meta information for \/macha9@Macha\/files\/scale.eps: unable to determine file format","level":2,"time":1381724101}
+{"app":"search_lucene","message":"failed to extract meta information for \/macha9@Macha\/files\/folder17\/fig8.eps: unable to determine file format","level":2,"time":1381724104}
+{"app":"search_lucene","message":"failed to extract meta information for \/macha9@Macha\/files\/folder17\/f4\/ams.sty: unable to determine file format","level":2,"time":1381724108}

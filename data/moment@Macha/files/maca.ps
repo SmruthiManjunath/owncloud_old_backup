@@ -1,0 +1,4441 @@
+%!PS-Adobe-1.0
+%%Creator: servo:karn (Phil Karn)
+%%Title: stdin
+%%CreationDate: Thu Mar 10 14:58:58 1994
+%%DocumentFonts: Times-Roman Times-Italic Times-Bold Symbol Times-Roman DIThacks
+%%Pages: (atend)
+%%EndComments
+% Start of pscat.pro -- prolog for troff translator
+% Copyright (c) 1985,1987 Adobe Systems Incorporated. All Rights Reserved. 
+% GOVERNMENT END USERS: See Notice file in TranScript library directory
+% -- probably /usr/lib/ps/Notice
+% RCS: $Header: pscat.pro,v 2.2 87/11/17 16:40:32 byron Rel $
+save /pscatsave exch def
+/$pscat 50 dict def
+$pscat begin
+/fm [1 0 0 1 0 0] def
+/xo 0 def /yo 0 def
+/M /moveto load def
+/R /show load def
+/S {exch currentpoint exch pop moveto show}def
+/T {exch currentpoint pop exch moveto show}def
+/U {3 1 roll moveto show}def
+/siz 0 def
+/font 0 def
+/Z {/siz exch def SF}def
+/F {/font exch def SF}def
+/SF{font 0 ne
+    {catfonts font 1 sub get fm 0 siz put fm 3 siz neg put 
+     fm makefont setfont}if}def
+/BP{save/catsv exch def 0 792 translate 72 432 div dup neg scale 
+  xo yo translate 0 0 moveto}def
+/EP{catsv restore showpage}def
+
+% definitions for PPROC callback functions
+% each PPROC is called with the following number on the stack:
+% pointsize charcode railmag pswidth pschar x y wid
+/$pprocs 50 dict def
+/fractm [.65 0 0 .6 0 0] def
+% fractions
+/PS1{gsave $pprocs begin
+    /wid exch def pop pop pop pop pop /ch exch def /size exch def
+    /pair $pprocs ch get def /cf currentfont def
+    cf fractm makefont setfont
+    0 .3 size mul 6 mul 2 copy neg rmoveto pair 0 get show rmoveto
+    currentfont cf setfont (\244) show setfont
+    pair 1 get show grestore wid .06 div 0 rmoveto end}def
+$pprocs begin
+8#34 [(1)(4)] def
+8#36 [(1)(2)] def
+8#46 [(3)(4)] def
+end
+% DIThacks fonts for some special chars
+50 dict dup begin
+/FontType 3 def
+/FontName /DIThacks def
+/FontMatrix [.001 0.0 0.0 .001 0.0 0.0] def
+/FontBBox [-220 -280 900 900] def% a lie but ...
+/Encoding 256 array def
+0 1 255{Encoding exch /.notdef put}for
+Encoding
+ dup 8#040/space put %space
+ dup 8#110/rc put %right ceil
+ dup 8#111/lt put %left  top curl
+ dup 8#112/bv put %bold vert
+ dup 8#113/lk put %left  mid curl
+ dup 8#114/lb put %left  bot curl
+ dup 8#115/rt put %right top curl
+ dup 8#116/rk put %right mid curl
+ dup 8#117/rb put %right bot curl
+ dup 8#120/rf put %right floor
+ dup 8#121/lf put %left  floor
+ dup 8#122/lc put %left  ceil
+ dup 8#140/sq put %square
+ dup 8#141/bx put %box
+ dup 8#142/ci put %circle
+ dup 8#143/br put %box rule
+ dup 8#144/rn put %root extender
+ dup 8#145/vr put %vertical rule
+ dup 8#146/ob put %outline bullet
+ dup 8#147/bu put %bullet
+ dup 8#150/ru put %rule
+ dup 8#151/ul put %underline
+ pop
+/DITfd 100 dict def
+/BuildChar{0 begin
+ /cc exch def /fd exch def
+ /charname fd /Encoding get cc get def
+ /charwid fd /Metrics get charname get def
+ /charproc fd /CharProcs get charname get def
+ charwid 0 fd /FontBBox get aload pop setcachedevice
+ 40 setlinewidth
+ newpath 0 0 moveto gsave charproc grestore
+ end}def
+/BuildChar load 0 DITfd put
+%/UniqueID 5 def
+/CharProcs 50 dict def
+CharProcs begin
+/space{}def
+/.notdef{}def
+/ru{500 0 rls}def
+/rn{0 750 moveto 500 0 rls}def
+/vr{20 800 moveto 0 -770 rls}def
+/bv{20 800 moveto 0 -1000 rls}def
+/br{20 770 moveto 0 -1040 rls}def
+/ul{0 -250 moveto 500 0 rls}def
+/ob{200 250 rmoveto currentpoint newpath 200 0 360 arc closepath stroke}def
+/bu{200 250 rmoveto currentpoint newpath 200 0 360 arc closepath fill}def
+/sq{80 0 rmoveto currentpoint dround newpath moveto
+    640 0 rlineto 0 640 rlineto -640 0 rlineto closepath stroke}def
+/bx{80 0 rmoveto currentpoint dround newpath moveto
+    640 0 rlineto 0 640 rlineto -640 0 rlineto closepath fill}def
+/ci{355 333 rmoveto currentpoint newpath 333 0 360 arc
+    50 setlinewidth stroke}def
+
+/lt{20 -200 moveto 0 550 rlineto currx 800 2cx s4 add exch s4 a4p stroke}def
+/lb{20 800 moveto 0 -550 rlineto currx -200 2cx s4 add exch s4 a4p stroke}def
+/rt{20 -200 moveto 0 550 rlineto currx 800 2cx s4 sub exch s4 a4p stroke}def
+/rb{20 800 moveto 0 -500 rlineto currx -200 2cx s4 sub exch s4 a4p stroke}def
+/lk{20 800 moveto 20 300 -280 300 s4 arcto pop pop 1000 sub
+    currentpoint stroke moveto
+    20 300 4 2 roll s4 a4p 20 -200 lineto stroke}def
+/rk{20 800 moveto 20 300 320 300 s4 arcto pop pop 1000 sub
+    currentpoint stroke moveto
+    20 300 4 2 roll s4 a4p 20 -200 lineto stroke}def
+/lf{20 800 moveto 0 -1000 rlineto s4 0 rls}def
+/rf{20 800 moveto 0 -1000 rlineto s4 neg 0 rls}def
+/lc{20 -200 moveto 0 1000 rlineto s4 0 rls}def
+/rc{20 -200 moveto 0 1000 rlineto s4 neg 0 rls}def
+end
+
+/Metrics 50 dict def Metrics begin
+/.notdef 0 def
+/space 500 def
+/ru 500 def
+/br 0 def
+/lt 250 def
+/lb 250 def
+/rt 250 def
+/rb 250 def
+/lk 250 def
+/rk 250 def
+/rc 250 def
+/lc 250 def
+/rf 250 def
+/lf 250 def
+/bv 250 def
+/ob 350 def
+/bu 350 def
+/ci 750 def
+/bx 750 def
+/sq 750 def
+/rn 500 def
+/ul 500 def
+/vr 0 def
+end
+
+DITfd begin
+/s2 500 def /s4 250 def /s3 333 def
+/a4p{arcto pop pop pop pop}def
+/2cx{2 copy exch}def
+/rls{rlineto stroke}def
+/currx{currentpoint pop}def
+/dround{transform round exch round exch itransform} def
+end
+end
+/DIThacks exch definefont pop
+/catfonts [
+	/Times-Roman findfont
+	/Times-Italic findfont
+	/Times-Bold findfont
+	/Symbol findfont
+	/Times-Roman findfont
+	/DIThacks findfont
+	] def
+%%EndProlog
+%%Page: ? 1
+BP
+1 F
+60 Z
+1017 648(1)U
+3 F
+72 Z
+793 672(M)U
+(ACA)R
+1071(-)S
+1119(A)S
+1195(New)S
+1355(Channel)S
+1639(Access)S
+1867(Method)S
+2131(for)S
+2247(Packet)S
+2479(Radio)S
+2 F
+60 Z
+1513 816(Phil)U
+1634(Karn,)S
+1792(KA9Q)S
+1586 1068(ABSTRACT)U
+1 F
+2778 1212(n)U
+648 1284(a)U
+798 1212(The)U
+925(existing)S
+1149(Carrier)S
+1353(Sense)S
+1526(Multiple)S
+1767(Access)S
+1969(\(CSMA\))S
+2210(method)S
+2423(widely)S
+2619(used)S
+2761(i)S
+675 1284(mateur)U
+867(packet)S
+1048(radio)S
+1195(on)S
+1278(shared)S
+1458(simplex)S
+1672(packet)S
+1853(radio)S
+2000(channels)S
+2234(frequently)S
+2505(suffers)S
+2691(from)S
+2788 1356(-)U
+648 1428(l)U
+648 1356(the)U
+747(well-known)S
+5 F
+1059(")S
+1 F
+(hidden)R
+1273(terminal)S
+1500(problem)S
+5 F
+(")R
+1 F
+1750(and)S
+1861(the)S
+1959(less)S
+2073(well)S
+2201(known)S
+2388(but)S
+2489(related)S
+2678(prob)S
+665 1428(em)U
+767(of)S
+845(the)S
+5 F
+946(")S
+1 F
+(exposed)R
+1195(terminal)S
+1397(.)S
+5 F
+(")R
+1 F
+1464(This)S
+1598(paper)S
+1759(proposes)S
+1999(a)S
+2053(new)S
+2180(scheme,)S
+2403(Multiple)S
+2638(Access)S
+648 1572(c)U
+648 1500(with)U
+777(Collision)S
+1020(Avoidance)S
+1303(\(MACA\),)S
+1559(that)S
+1672(could)S
+1828(greatly)S
+2018(relieve)S
+2204(these)S
+2349(problems.)S
+2629(MACA)S
+675 1572(an)U
+754(also)S
+873(be)S
+951(easily)S
+1113(extended)S
+1352(to)S
+1420(provide)S
+1625(automati)S
+1837(c)S
+1885(transmitte)S
+2127(r)S
+2168(power)S
+2339(control.)S
+2546(This)S
+2674(could)S
+648 1644(increase)U
+866(the)S
+960(carrying)S
+1181(capaci)S
+1336(ty)S
+1403(of)S
+1473(a)S
+1520(channel)S
+1728(substantially.)S
+3 F
+810 1932(n)U
+432(1.)S
+517(Introductio)S
+1 F
+582 2025(In)U
+669(the)S
+780(classic)S
+978(hidden)S
+1179(terminal)S
+1418(situation,)S
+432 2169(a)U
+432 2097(station)U
+616(Y)S
+682(can)S
+789(hear)S
+916(both)S
+1045(stations)S
+1251(X)S
+1316(and)S
+1425(Z,)S
+1499(but)S
+1598(X)S
+459 2169(nd)U
+554(Z)S
+626(cannot)S
+822(hear)S
+960(each)S
+1105(other.)S
+1298(X)S
+1375(and)S
+1496(Z)S
+1567(are)S
+432 2313(o)U
+432 2241(therefore)U
+686(unable)S
+883(to)S
+966(avoid)S
+1136(colliding)S
+1387(with)S
+1530(each)S
+462 2313(ther)U
+576(at)S
+640(Y.)S
+718(\(See)S
+845(\256gure)S
+1005(1.\))S
+582 2406(I)U
+(n)R
+658(the)S
+758(exposed)S
+981(terminal)S
+1209(case)S
+1339(\(\256gure)S
+1524(2\),)S
+1614(a)S
+1626 2478(.)U
+432 2550(E)U
+432 2478(well-sited)U
+691(station)S
+873(X)S
+937(can)S
+1042(hear)S
+1167(far)S
+1255(away)S
+1402(station)S
+1583(Y)S
+469 2550(ven)U
+587(though)S
+785(X)S
+859(is)S
+930(too)S
+1038(far)S
+1136(from)S
+1284(Y)S
+1358(to)S
+1436(interfere)S
+1624 2622(l)U
+432 2694(d)U
+432 2622(with)U
+568(its)S
+654(traf\256c)S
+827(to)S
+903(other)S
+1056(nearby)S
+1249(stations,)S
+1476(X)S
+1547(wil)S
+462 2694(efer)U
+579(to)S
+649(it)S
+706(unnecessarily,)S
+1071(thus)S
+1193(wasting)S
+1402(an)S
+1481(oppor-)S
+432 2838(t)U
+432 2766(tunity)U
+604(to)S
+682(reuse)S
+840(the)S
+945(channel)S
+1163(locally.)S
+1373(Sometimes)S
+449 2838(here)U
+579(can)S
+688(be)S
+770(so)S
+848(much)S
+1007(traf\256c)S
+1176(in)S
+1248(the)S
+1347(remote)S
+1540(area)S
+1618 2910(s)U
+432 2982(i)U
+432 2910(that)U
+545(the)S
+641(well-sited)S
+900(station)S
+1082(seldom)S
+1277(transmits.)S
+1534(Thi)S
+449 2982(s)U
+492(a)S
+539(common)S
+770(problem)S
+991(with)S
+1118(hilltop)S
+1296(digipeate)S
+1518(rs.)S
+1618 3075(s)U
+432 3147(a)U
+582 3075(This)U
+714(paper)S
+873(suggests)S
+1100(a)S
+1151(new)S
+1275(channel)S
+1487(acces)S
+459 3147(lgorithm)U
+692(for)S
+787(amateur)S
+1007(packet)S
+1190(radio)S
+1338(use)S
+1442(that)S
+1557(can)S
+1614 3219(e)U
+432 3291(A)U
+432 3219(minimiz)U
+634(e)S
+686(both)S
+818(problems.)S
+1082(This)S
+1213(method,)S
+1433(Multipl)S
+475 3291(ccess)U
+627(with)S
+759(Collision)S
+1005(Avoidance)S
+1290(\(MACA\),)S
+1548(was)S
+432 3435(A)U
+432 3363(inspired)U
+650(by)S
+734(the)S
+832(CSMA/CA)S
+1125(method)S
+1330(\(used)S
+1484(by)S
+1567(the)S
+475 3435(pple)U
+602(Localta)S
+784(lk)S
+854(network)S
+1074(for)S
+1167(somewhat)S
+1433(different)S
+432 3579(s)U
+432 3507(reasons\))U
+662(and)S
+779(by)S
+869(the)S
+5 F
+973(")S
+1 F
+(prioritiz)R
+1193(ed)S
+1280(ACK)S
+5 F
+(")R
+1 F
+1460(scheme)S
+455 3579(uggested)U
+693(by)S
+777(Eric)S
+902(Gustafson,)S
+1184(N7CL,)S
+1372(for)S
+1465(AX.25.)S
+432 3723(a)U
+432 3651(It)U
+496(is)S
+563(not)S
+667(only)S
+800(an)S
+883(elegant)S
+1084(solution)S
+1304(to)S
+1377(the)S
+1477(hidden)S
+459 3723(nd)U
+557(exposed)S
+792(terminal)S
+1032(problems,)S
+1309(but)S
+1423(with)S
+1567(the)S
+432 3867(t)U
+432 3795(necessary)U
+696(hardware)S
+950(support)S
+1160(it)S
+1224(can)S
+1337(be)S
+1423(extended)S
+449 3867(o)U
+519(do)S
+618(automati)S
+830(c)S
+896(per-packet)S
+1190(transmitte)S
+1432(r)S
+1491(power)S
+5 F
+432 4011(")U
+1 F
+432 3939(control.)U
+659(This)S
+807(could)S
+982(substantially)S
+1328(increase)S
+1567(the)S
+457 4011(carrying)U
+693(capaci)S
+848(ty)S
+5 F
+(")R
+1 F
+955(of)S
+1039(a)S
+1100(simplex)S
+1325(packet)S
+1517(radio)S
+1614 4083(a)U
+6 F
+48 Z
+432 4143(h)U
+1 F
+60 Z
+432 4083(channel)U
+662(used)S
+814(for)S
+926(local)S
+1086(communica)S
+1368(tions)S
+1526(in)S
+6 F
+48 Z
+456 4143(hhhhhhhhhhhhhhhhh)U
+1 F
+534 4212(M)U
+(ACA)R
+695(is)S
+743(an)S
+804(acronym,)S
+999(not)S
+1076(a)S
+1113(Spanish)S
+1281(word.)S
+36 Z
+492 4197(1)U
+60 Z
+1815 1932(densely)U
+2025(populated)S
+2289(area,)S
+2431(thus)S
+2557(satisfying)S
+2817(both)S
+2950(the)S
+3004 2004(r)U
+1815 2076(n)U
+1815 2004(FCC)U
+1975(mandate)S
+2227(to)S
+2321(use)S
+5 F
+2448(")S
+1 F
+(the)R
+2593(minimum)S
+2874(powe)S
+1845 2076(ecessary)U
+2079(to)S
+2156(carry)S
+2310(out)S
+2416(the)S
+2519(desired)S
+2722(communica)S
+3004(-)S
+1815 2220(a)U
+1815 2148(tions)U
+5 F
+(")R
+1 F
+1992(\(Part)S
+2144(97.313\))S
+2363(and)S
+2484(to)S
+5 F
+2565(")S
+1 F
+(contribute)R
+2869(to)S
+2950(the)S
+1842 2220(dvanceme)U
+2087(nt)S
+2154(of)S
+2224(the)S
+2318(radio)S
+2462(art)S
+5 F
+(")R
+1 F
+2571(\(Part)S
+2708(97.1)S
+2833(\(b\)\).)S
+3 F
+1815 2364(2.)U
+1900(How)S
+2040(CSMA/CA)S
+2339(Works)S
+1 F
+1965 2457(CSMA/CA)U
+2259(as)S
+2333(used)S
+2467(by)S
+2551(Localta)S
+2733(lk)S
+2804(works)S
+2974(as)S
+1815 2601(a)U
+1815 2529(follows.)U
+2040(When)S
+2214(a)S
+2271(station)S
+2462(wants)S
+2632(to)S
+2708(send)S
+2847(data)S
+2977(to)S
+1842 2601(nother,)U
+2040(it)S
+2102(\256rst)S
+2223(sends)S
+2384(a)S
+2439(short)S
+2587(Request)S
+2809(To)S
+2904(Send)S
+3004 2673(r)U
+1815 2745(r)U
+1815 2673(\(RTS\))U
+2001(packet)S
+2194(to)S
+2276(the)S
+2385(destination.)S
+2700(The)S
+2829(receive)S
+1835 2745(esponds)U
+2063(with)S
+2205(a)S
+2267(Clear)S
+2432(to)S
+2513(Send)S
+2667(\(CTS\))S
+2851(packet.)S
+1815 2889(q)U
+1815 2817(On)U
+1926(receipt)S
+2129(of)S
+2217(the)S
+2329(CTS,)S
+2492(the)S
+2603(sender)S
+2797(sends)S
+2967(its)S
+1845 2889(ueued)U
+2024(data)S
+2160(packet\(s\).)S
+2430(If)S
+2504(the)S
+2612(sender)S
+2803(does)S
+2947(not)S
+1815 3033(R)U
+1815 2961(receive)U
+2026(a)S
+2089(CTS)S
+2235(after)S
+2382(a)S
+2445(timeout,)S
+2681(it)S
+2751(resends)S
+2967(its)S
+1855 3033(TS)U
+1953(and)S
+2068(waits)S
+2223(a)S
+2278(little)S
+2418(longer)S
+2600(for)S
+2697(a)S
+2751(reply.)S
+2917(This)S
+3004 3105(\))U
+1815 3177(i)U
+1815 3105(three-step)U
+2076(process)S
+2278(\(not)S
+2397(counting)S
+2630(retransmissions)S
+1832 3177(s)U
+1884(called)S
+2058(a)S
+2 F
+2113(dialogue)S
+1 F
+(.)R
+2367(Since)S
+2529(a)S
+2584(dialogue)S
+2820(involves)S
+3004 3249(-)U
+1815 3321(f)U
+1815 3249(transmissions)U
+2165(by)S
+2248(both)S
+2378(stations,)S
+2600(I)S
+2643(will)S
+2760(avoid)S
+2917(con)S
+1835 3321(usion)U
+1991(by)S
+2077(referring)S
+2314(to)S
+2387(the)S
+2487(station)S
+2674(that)S
+2791(sends)S
+2950(the)S
+2997 3393(e)U
+1815 3465(s)U
+1815 3393(RTS)U
+1954(and)S
+2070(data)S
+2200(packets)S
+2410(as)S
+2489(the)S
+2 F
+2592(initiator)S
+1 F
+(,)R
+2834(and)S
+2950(th)S
+1838 3465(tation)U
+1996(that)S
+2107(sends)S
+2260(the)S
+2354(CTS)S
+2484(as)S
+2554(the)S
+2 F
+2648(responder)S
+1 F
+(.)R
+2997 3558(a)U
+1815 3630(f)U
+1965 3558(The)U
+2079(RTS)S
+2209(packet)S
+2387(tells)S
+2508(a)S
+2555(responder)S
+2812(that)S
+2923(dat)S
+1835 3630(ollows.)U
+2043(This)S
+2183(gives)S
+2343(the)S
+2449(responder)S
+2718(a)S
+2777(chance)S
+2977(to)S
+2994 3702(y)U
+1815 3774(e)U
+1815 3702(prepare,)U
+2043(e.g.,)S
+2177(by)S
+2269(allocat)S
+2431(ing)S
+2540(buffer)S
+2718(space)S
+2883(or)S
+2964(b)S
+1842 3774(ntering)U
+2052(a)S
+5 F
+2118(")S
+1 F
+(spin)R
+2282(loop)S
+5 F
+(")R
+1 F
+2453(on)S
+2551(a)S
+2616(programmed-I/O)S
+2994 3846(k)U
+1815 3918(u)U
+1815 3846(interface)U
+2027(.)S
+2101(This)S
+2247(is)S
+2326(the)S
+2439(main)S
+2599(reason)S
+2795(Localta)S
+2977(l)S
+1845 3918(ses)U
+1951(the)S
+2058(CSMA/CA)S
+2360(dialogue.)S
+2615(The)S
+2741(Zilog)S
+2904(8530)S
+2994 3990(n)U
+1815 4062(b)U
+1815 3990(HDLC)U
+2011(chip)S
+2148(used)S
+2290(in)S
+2369(the)S
+2475(Apple)S
+2654(Macintosh)S
+2940(ca)S
+1845 4062(uffer)U
+1996(the)S
+2104(3-byte)S
+2291(Localta)S
+2473(lk)S
+2553(RTS)S
+2696(packet)S
+2887(in)S
+2967(its)S
+3007 4134(t)U
+1815 4206(n)U
+1815 4134(FIFO,)U
+1991(but)S
+2100(without)S
+2316(a)S
+2375(DMA)S
+2545(path)S
+2680(to)S
+2758(memory)S
+2990(i)S
+1845 4206(eeds)U
+1977(the)S
+2076(CPU)S
+2216(to)S
+2287(transfer)S
+2495(data)S
+2620(to)S
+2691(memory)S
+2916(as)S
+2990(it)S
+1815 4278(arrives.)U
+2022(The)S
+2144(CPU)S
+2288(responds)S
+2529(to)S
+2604(the)S
+2705(arrival)S
+2890(of)S
+2967(an)S
+EP
+%%Page: ? 2
+BP
+1 F
+60 Z
+432 510(t)U
+432 438(RTS)U
+569(packet)S
+754(by)S
+841(returning)S
+1088(a)S
+1141(CTS)S
+1277(and)S
+1390(entering)S
+1614(a)S
+1673 222(-)U
+1713(2)S
+1763(-)S
+449 510(ight)U
+568(read)S
+697(loop,)S
+844(waiting)S
+1050(for)S
+1145(the)S
+1244(data)S
+1370(to)S
+1441(arrive.)S
+48 Z
+1617 492(2)U
+60 Z
+432 654(n)U
+432 582(\(A)U
+519(timeout)S
+728(prevents)S
+956(a)S
+1006(system)S
+1196(lockup)S
+1383(if)S
+1443(the)S
+1540(data)S
+462 654(ever)U
+586(arrives.\))S
+582 747(A)U
+(s)R
+707(is)S
+805(standard)S
+1067(for)S
+1195(CSMA)S
+1422(schemes,)S
+432 891(n)U
+432 819(CSMA/CA)U
+721(requires)S
+935(stations)S
+1139(to)S
+1206(stay)S
+1323(off)S
+1413(the)S
+1507(chan-)S
+462 891(el)U
+529(when)S
+681(another)S
+884(transmission)S
+1210(is)S
+1272(already)S
+1472(in)S
+1541(pro-)S
+1624 963(t)U
+432 1035(o)U
+432 963(gress.)U
+616(CSMA/CA)S
+911(also)S
+1033(requires)S
+1252(any)S
+1364(station)S
+1550(tha)S
+462 1035(verhears)U
+692(an)S
+775(RTS)S
+911(or)S
+987(CTS)S
+1123(packet)S
+1307(directed)S
+1527(else-)S
+432 1179(t)U
+432 1107(where)U
+612(to)S
+692(inhibit)S
+883(its)S
+972(transmitte)S
+1214(r)S
+1266(for)S
+1368(a)S
+1427(speci\256ed)S
+449 1179(ime.)U
+596(This)S
+723(helps)S
+870(reduce)S
+1051(the)S
+1145(probability)S
+1430(of)S
+1500(a)S
+1547(col-)S
+1626 1251(.)U
+432 1323(T)U
+432 1251(lision)U
+601(with)S
+743(a)S
+804(subsequent)S
+1105(CTS)S
+1249(or)S
+1333(data)S
+1468(packet)S
+469 1323(his)U
+569(is)S
+639(the)S
+743(CA)S
+855(or)S
+2 F
+934(Collision)S
+1184(Avoidance)S
+1 F
+1468(part)S
+1591(of)S
+1621 1395(r)U
+432 1467(p)U
+432 1395(CSMA/CA.)U
+740(However,)S
+999(collisions)S
+1253(are)S
+1350(not)S
+1450(a)S
+1500(majo)S
+462 1467(roblem)U
+657(on)S
+741(Localta)S
+923(lk;)S
+1011(the)S
+1109(network)S
+1330(is)S
+1393(physically)S
+1614 1539(a)U
+432 1611(r)U
+432 1539(small,)U
+613(carrier)S
+806(sensing)S
+1020(is)S
+1094(fairly)S
+1259(rapid,)S
+1432(the)S
+1540(dat)S
+452 1611(ate)U
+560(is)S
+636(relative)S
+818(ly)S
+901(low,)S
+1042(and)S
+1165(\(if)S
+1258(the)S
+1368(network)S
+1601(is)S
+1626 1683(.)U
+432 1755(P)U
+432 1683(properly)U
+672(built\))S
+839(there)S
+996(are)S
+1106(no)S
+1202(hidden)S
+1401(terminal)S
+1603(s)S
+465 1755(lain)U
+577(CSMA)S
+767(would)S
+937(work)S
+1080(well,)S
+1219(but)S
+1316(there)S
+1457(was)S
+1570(lit-)S
+432 1899(R)U
+432 1827(tle)U
+520(extra)S
+668(cost)S
+792(to)S
+866(the)S
+967(CA)S
+1076(feature)S
+1270(\(given)S
+1450(that)S
+1567(the)S
+472 1899(TS/CTS)U
+691(dialogue)S
+921(was)S
+1035(already)S
+1234(needed)S
+1426(for)S
+1517(other)S
+3 F
+432 2115(3)U
+1 F
+432 1971(reasons\))U
+652(so)S
+725(it)S
+779(was)S
+892(included.)S
+3 F
+462 2115(.)U
+517(Turning)S
+750(CSMA/CA)S
+1049(into)S
+1169(MACA)S
+1 F
+1611 2208(n)U
+432 2280(s)U
+582 2208(Hidden)U
+787(and)S
+901(exposed)S
+1125(terminal)S
+1327(s)S
+1377(abound)S
+1581(o)S
+455 2280(implex)U
+654(packet)S
+843(radio)S
+997(channels,)S
+1253(and)S
+1370(this)S
+1487(makes)S
+1624 2352(t)U
+432 2424(o)U
+432 2352(them)U
+591(very)S
+735(different)S
+980(from)S
+1134(Localta)S
+1316(lk)S
+1400(and)S
+1524(mos)S
+462 2424(ther)U
+584(types)S
+739(of)S
+817(local)S
+963(area)S
+1091(networks.)S
+1373(When)S
+1544(hid-)S
+1624 2496(t)U
+432 2568(a)U
+432 2496(den)U
+566(terminal)S
+768(s)S
+838(exist,)S
+1014(lack)S
+1162(of)S
+1259(carrier)S
+1464(doesn')S
+459 2568(lways)U
+633(mean)S
+797(it's)S
+907(OK)S
+1026(to)S
+1106(transmit.)S
+1352(Conversely,)S
+432 2712(r)U
+432 2640(when)U
+591(exposed)S
+817(terminal)S
+1019(s)S
+1071(exist,)S
+1229(presence)S
+1469(of)S
+1547(car-)S
+452 2712(ier)U
+566(doesn't)S
+793(always)S
+1010(mean)S
+1191(that)S
+1332(it's)S
+1458(bad)S
+1594(to)S
+1624 2784(t)U
+432 2856(l)U
+432 2784(transmit.)U
+672(In)S
+748(other)S
+898(words,)S
+1085(the)S
+1185(data)S
+1312(carrier)S
+1496(detec)S
+449 2856(ine)U
+551(from)S
+696(your)S
+834(modem)S
+1043(is)S
+1111(often)S
+1263(useless.)S
+1476(So)S
+1567(I'll)S
+432 3000(o)U
+432 2928(make)U
+593(a)S
+650(radical)S
+845(proposal:)S
+1099(let's)S
+1233(ignore)S
+1416(DCD!)S
+1591(In)S
+462 3000(ther)U
+611(words,)S
+827(let's)S
+986(get)S
+1114(rid)S
+1235(of)S
+1339(the)S
+1467(CS)S
+1594(in)S
+432 3144(c)U
+432 3072(CSMA/CA.)U
+748(\(It's)S
+880(too)S
+989(hard)S
+1128(to)S
+1207(build)S
+1363(good)S
+1515(DCD)S
+459 3144(ircuits)U
+630(anyway...\))S
+582 3237(I)U
+(nstead)R
+782(we'll)S
+932(extend)S
+1119(the)S
+1219(CA)S
+1328(part)S
+1448(of)S
+1524(what)S
+432 3381(k)U
+432 3309(we'll)U
+584(call)S
+700(MA/CA)S
+924(\(or)S
+1022(just)S
+1137(plain)S
+1286(MACA\).)S
+1547(The)S
+462 3381(ey)U
+541(to)S
+609(collision)S
+838(avoidance)S
+1104(is)S
+1165(the)S
+1260(effect)S
+1419(that)S
+1531(RTS)S
+1611 3453(n)U
+432 3525(t)U
+432 3453(and)U
+546(CTS)S
+683(packets)S
+891(have)S
+1032(on)S
+1119(the)S
+1220(other)S
+1371(stations)S
+1581(o)S
+449 3525(he)U
+535(channel.)S
+767(When)S
+940(a)S
+995(station)S
+1184(overhears)S
+1446(an)S
+1531(RTS)S
+1611 3597(n)U
+432 3669(t)U
+432 3597(addressed)U
+697(to)S
+772(another)S
+981(station,)S
+1185(it)S
+1246(inhibits)S
+1454(its)S
+1538(ow)S
+449 3669(ransmitter)U
+715(long)S
+842(enough)S
+1039(for)S
+1129(the)S
+1223(addressed)S
+1480(station)S
+1611 3741(n)U
+6 F
+48 Z
+432 3801(h)U
+1 F
+60 Z
+432 3741(to)U
+534(respond)S
+779(with)S
+941(a)S
+1022(CTS.)S
+1201(When)S
+1399(a)S
+1480(statio)S
+6 F
+48 Z
+456 3801(hhhhhhhhhhhhhhhhh)U
+1 F
+534 3870(I)U
+(t)R
+586(would)S
+729(be)S
+797(nice)S
+899(if)S
+951(we)S
+1030(could)S
+1159(use)S
+1246(this)S
+1338(feature)S
+1492(on)S
+432 3930(p)U
+36 Z
+492 3855(2)U
+48 Z
+456 3930(acket)U
+573(radio)S
+687(with)S
+788(our)S
+868(programmed-I/O)S
+1208(HDLC)S
+1355(interfaces)S
+1528 3990(,)U
+432 4050(i)U
+432 3990(\(e.g.,)U
+551(DRSI)S
+683(PCPA,)S
+838(Paccomm)S
+1048(PC-100\).)S
+1260(Unfortunately)S
+445 4050(f)U
+483(our)S
+569(RTS/CTS)S
+780(packets)S
+945(carry)S
+1065(full)S
+1153(source)S
+1299(and)S
+1389(destina-)S
+432 4170(F)U
+432 4110(tion)U
+527(call)S
+616(signs,)S
+747(they)S
+849(would)S
+989(not)S
+1070(\256t)S
+1130(into)S
+1224(the)S
+1302(3-byte)S
+1444(8530)S
+459 4170(IFOs.)U
+602(So)S
+671(high)S
+774(speed)S
+901(operation)S
+1099(will)S
+1191(still)S
+1280(require)S
+1432(either)S
+432 4230(DMA)U
+561(or)S
+617(a)S
+654(dedicated)S
+852(I/O)S
+932(processor.)S
+60 Z
+1815 438(overhears)U
+2073(a)S
+2124(CTS)S
+2257(addressed)S
+2517(to)S
+2587(another)S
+2791(station,)S
+2990(it)S
+1815 582(o)U
+1815 510(inhibits)U
+2022(its)S
+2105(own)S
+2234(transmitte)S
+2476(r)S
+2521(long)S
+2653(enough)S
+2855(for)S
+2950(the)S
+1845 582(ther)U
+1962(station)S
+2146(to)S
+2215(send)S
+2347(its)S
+2426(data.)S
+2584(The)S
+2700(transmitte)S
+2942(r)S
+2984(is)S
+3001 654(s)U
+1815 726(h)U
+1815 654(inhibited)U
+2057(for)S
+2154(the)S
+2254(proper)S
+2437(time)S
+2571(even)S
+2711(if)S
+2774(nothing)S
+2984(i)S
+1845 726(eard)U
+1969(in)S
+2036(response)S
+2266(to)S
+2333(an)S
+2410(RTS)S
+2540(or)S
+2610(CTS)S
+2740(packet.)S
+2987 819(Z)U
+1815 891(c)U
+1965 819(Figure)U
+2159(3)S
+2226(shows)S
+2411(an)S
+2504(example.)S
+2780(Station)S
+1842 891(annot)U
+2005(hear)S
+2138(X's)S
+2253(transmissions)S
+2609(to)S
+2684(Y,)S
+2770(but)S
+2875(it)S
+2 F
+2937(can)S
+1 F
+2997 963(a)U
+1815 1035(C)U
+1815 963(hear)U
+1951(Y's)S
+2069(CTS)S
+2211(packets)S
+2424(to)S
+2503(X.)S
+2593(If)S
+2664(Z)S
+2732(overhears)S
+1855 1035(TS)U
+1955(packet)S
+2142(from)S
+2288(Y)S
+2360(to)S
+2436(X,)S
+2523(it)S
+2586(will)S
+2709(know)S
+2871(not)S
+2977(to)S
+1815 1179(X)U
+1815 1107(transmit)U
+2037(until)S
+2172(after)S
+2306(Y)S
+2372(has)S
+2475(receive)S
+2650(d)S
+2703(its)S
+2783(data)S
+2907(from)S
+1858 1179(.)U
+1965 1272(But)U
+2081(how)S
+2213(does)S
+2352(Z)S
+2418(know)S
+2579(how)S
+2710(long)S
+2845(to)S
+2920(wait)S
+1815 1416(h)U
+1815 1344(after)U
+1958(overhearing)S
+2277(Y's)S
+2394(CTS?)S
+2582(That's)S
+2767(easy.)S
+2940(We)S
+1845 1416(ave)U
+1954(X,)S
+2037(the)S
+2136(initiat)S
+2278(or)S
+2353(of)S
+2428(the)S
+2527(dialogue,)S
+2775(include)S
+2977(in)S
+2994 1488(o)U
+1815 1560(s)U
+1815 1488(its)U
+1902(RTS)S
+2042(packet)S
+2230(the)S
+2334(amount)S
+2545(of)S
+2625(data)S
+2756(it)S
+2820(plans)S
+2977(t)S
+1838 1560(end,)U
+1968(and)S
+2083(we)S
+2181(have)S
+2323(Y,)S
+2409(the)S
+2511(responder,)S
+2791(echo)S
+2933(that)S
+1815 1704(o)U
+1815 1632(information)U
+2134(in)S
+2215(its)S
+2305(CTS)S
+2448(packet.)S
+2654(Now)S
+2803(everyone)S
+1845 1704(verhearing)U
+2136(Y's)S
+2254(CTS)S
+2396(knows)S
+2584(just)S
+2703(how)S
+2838(long)S
+2977(to)S
+3007 1776(t)U
+1815 1848(m)U
+1815 1776(wait)U
+1951(to)S
+2030(avoid)S
+2196(clobbering)S
+2486(a)S
+2545(data)S
+2678(packet)S
+2868(that)S
+2990(i)S
+1862 1848(ight)U
+1976(not)S
+2073(even)S
+2207(hear.)S
+1965 1941(A)U
+(s)R
+2058(long)S
+2192(as)S
+2269(the)S
+2370(link)S
+2490(between)S
+2717(each)S
+2854(pair)S
+2974(of)S
+1815 2085(s)U
+1815 2013(stations)U
+2022(in)S
+2092(the)S
+2189(network)S
+2409(is)S
+2472(reciproca)S
+2697(l)S
+2736(\(i.e.,)S
+2867(all)S
+2950(the)S
+1838 2085(tations)U
+2021(have)S
+2157(comparable)S
+2460(transmitte)S
+2702(r)S
+2743(powers)S
+2937(and)S
+1815 2229(p)U
+1815 2157(receive)U
+1990(r)S
+2051(noise)S
+2219(levels\),)S
+2436(the)S
+2551(receipt)S
+2757(of)S
+2847(a)S
+2914(CTS)S
+1845 2229(acket)U
+1998(by)S
+2083(a)S
+2135(station)S
+2320(not)S
+2421(party)S
+2569(to)S
+2640(a)S
+2691(dialogue)S
+2923(tells)S
+1815 2373(i)U
+1815 2301(it)U
+1876(that)S
+1994(if)S
+2058(it)S
+2119(were)S
+2262(to)S
+2335(transmit,)S
+2574(it)S
+2634(would)S
+2810(probably)S
+1832 2373(nterfere)U
+2065(with)S
+2217(the)S
+2336(reception)S
+2606(of)S
+2701(data)S
+2846(by)S
+2950(the)S
+3001 2445(s)U
+1815 2517(i)U
+1815 2445(responder)U
+2077(\(the)S
+2196(sender)S
+2378(of)S
+2453(the)S
+2552(CTS\).)S
+2721(MACA)S
+2924(thu)S
+1832 2517(nhibits)U
+2052(transmission)S
+2411(when)S
+2596(ordinary)S
+2855(CSMA)S
+3001 2589(s)U
+1815 2661(r)U
+1815 2589(would)U
+2002(permit)S
+2197(it)S
+2268(\(and)S
+2412(allow)S
+2582(a)S
+2645(collision\),)S
+2924(thu)S
+1835 2661(elieving)U
+2066(the)S
+2176(hidden)S
+2375(terminal)S
+2612(problem.)S
+2863(\(Colli-)S
+3007 2733(t)U
+1815 2805(l)U
+1815 2733(sions)U
+1961(are)S
+2057(not)S
+2 F
+2156(totally)S
+1 F
+2333(avoided;)S
+2563(more)S
+2709(on)S
+2791(this)S
+2900(poin)S
+1832 2805(ater.\))U
+1965 2898(Conversely,)U
+2279(if)S
+2341(a)S
+2393(station)S
+2579(hears)S
+2730(no)S
+2814(response)S
+3007 2970(t)U
+1815 3042(t)U
+1815 2970(to)U
+1891(an)S
+1977(overheard)S
+2247(RTS,)S
+2401(then)S
+2534(it)S
+2596(may)S
+2728(assume)S
+2933(tha)S
+1832 3042(he)U
+1911(intended)S
+2141(recipient)S
+2374(of)S
+2445(the)S
+2540(RTS)S
+2671(is)S
+2732(either)S
+2891(down)S
+2997 3114(e)U
+1815 3186(4)U
+1815 3114(or)U
+1888(out)S
+1988(of)S
+2061(range.)S
+2253(An)S
+2348(example)S
+2575(is)S
+2637(shown)S
+2815(in)S
+2884(\256gur)S
+1845 3186(.)U
+1909(Station)S
+2109(X)S
+2181(is)S
+2250(within)S
+2433(range)S
+2596(of)S
+2675(Y,)S
+2762(but)S
+2867(not)S
+2972(Z.)S
+1815 3330(p)U
+1815 3258(When)U
+1980(Y)S
+2044(sends)S
+2198(traf\256c)S
+2363(to)S
+2431(Z,)S
+2504(X)S
+2568(will)S
+2683(hear)S
+2808(Y's)S
+2914(RTS)S
+1845 3330(ackets)U
+2035(but)S
+2151(not)S
+2267(Z's)S
+2385(CTS)S
+2533(responses.)S
+2839(X)S
+2920(may)S
+3004 3402(f)U
+1815 3474(i)U
+1815 3402(therefore)U
+2054(transmit)S
+2273(on)S
+2354(the)S
+2448(channel)S
+2656(without)S
+2860(fear)S
+2974(o)S
+1832 3474(nterfering)U
+2112(with)S
+2261(Y's)S
+2389(data)S
+2531(transmissions)S
+2899(to)S
+2987(Z)S
+3009 3546(,)U
+1815 3618(M)U
+1815 3546(even)U
+1966(though)S
+2170(it)S
+2241(can)S
+2362(hear)S
+2503(them.)S
+2696(In)S
+2782(this)S
+2905(case)S
+1868 3618(ACA)U
+2023(allows)S
+2209(a)S
+2265(transmission)S
+2598(to)S
+2674(proceed)S
+2894(when)S
+3009 3690(,)U
+1815 3762(t)U
+1815 3690(ordinary)U
+2045(CSMA)S
+2240(would)S
+2416(prevent)S
+2622(it)S
+2681(unnecessarily)S
+1832 3762(hus)U
+1956(relieving)S
+2212(the)S
+2327(exposed)S
+2565(terminal)S
+2808(problem.)S
+1815 3906(a)U
+1815 3834(\(Because)U
+2058(modems)S
+2284(have)S
+2420(a)S
+2469(capture)S
+2669(effect,)S
+2843(hearing)S
+1868 3906(CTS)U
+2004(doesn't)S
+2 F
+2207(always)S
+1 F
+2400(mean)S
+2557(that)S
+2673(you'd)S
+2838(cause)S
+2997(a)S
+3007 3978(t)U
+1815 4050(y)U
+1815 3978(collision)U
+2056(if)S
+2126(you)S
+2248(transmit,)S
+2493(so)S
+2578(the)S
+2684(problem)S
+2917(isn')S
+1845 4050(et)U
+1909(complete)S
+2131(ly)S
+2198(solved.)S
+2390(More)S
+2540(on)S
+2620(this)S
+2727(point)S
+2871(later.\))S
+EP
+%%Page: ? 3
+BP
+3 F
+60 Z
+432 438(4.)U
+517(Metaphors)S
+817(for)S
+914(MACA)S
+1 F
+1673 222(-)U
+1713(3)S
+1763(-)S
+582 531(MACA)U
+806(is)S
+891(not)S
+1013(really)S
+1196(a)S
+1267(novel)S
+1445(idea;)S
+1607(it)S
+1624 603(t)U
+432 675(j)U
+432 603(merely)U
+621(formalize)S
+853(s)S
+897(a)S
+945(procedure)S
+1207(many)S
+1362(people)S
+1544(\(no)S
+449 675(ust)U
+541(radio)S
+687(amateurs\))S
+947(instinctive)S
+1199(ly)S
+1268(use)S
+1369(in)S
+1437(personal)S
+432 819(s)U
+432 747(conversation.)U
+780(A)S
+848(typical)S
+1038(cocktail)S
+1255(party)S
+1403(has)S
+1507(many)S
+455 819(imultane)U
+667(ous)S
+784(conversations.)S
+1164(The)S
+1292(average)S
+1514(guest)S
+432 963(h)U
+432 891(seldom)U
+626(waits)S
+773(for)S
+863(total)S
+991(silence)S
+1179(in)S
+1246(the)S
+1340(room)S
+1487(before)S
+462 963(e)U
+523(speaks,)S
+732(but)S
+843(if)S
+914(someone)S
+1161(asks)S
+1297(him)S
+1424(to)S
+1504(pause)S
+1614 1035(e)U
+432 1107(w)U
+432 1035(because)U
+654(he)S
+742(is)S
+813(trying)S
+988(to)S
+1066(hear)S
+1201(someone)S
+1445(else,)S
+1584(h)S
+475 1107(ill)U
+555(usually)S
+758(do)S
+847(so.)S
+944(The)S
+1067(MACA)S
+1275(RTS)S
+1414(packet)S
+1601(is)S
+432 1251(p)U
+432 1179(analogous)U
+700(to)S
+771(Bob)S
+895(saying)S
+5 F
+1076(")S
+1 F
+(Hey,)R
+1239(Tom!)S
+5 F
+(")R
+1 F
+1421(and)S
+1531(CTS)S
+462 1251(acket)U
+629(is)S
+708(analogous)S
+991(to)S
+1077(Tom)S
+1229(responding)S
+1534(with)S
+1611 1323(p)U
+432 1395(t)U
+5 F
+432 1323(")U
+1 F
+(Yeah,)R
+626(Bob?)S
+5 F
+(")R
+1 F
+(.)R
+820(This)S
+954(causes)S
+1138(most)S
+1281(people)S
+1468(to)S
+1541(sto)S
+449 1395(alking)U
+638(if)S
+713(they)S
+854(are)S
+965(close)S
+1126(to)S
+1210(Tom)S
+1361(\(except,)S
+1591(of)S
+1621 1467(-)U
+432 1539(p)U
+432 1467(course,)U
+631(for)S
+727(Bob\).)S
+888(The)S
+1008(same)S
+1158(thing)S
+1308(\(should\))S
+1534(hap)S
+462 1539(en)U
+553(in)S
+634(manual)S
+845(amateur)S
+1073(radio)S
+1230(operation)S
+1491(when-)S
+432 1683(o)U
+432 1611(ever)U
+567(a)S
+624(station)S
+815(\256nishes)S
+1028(a)S
+1085(transmission)S
+1419(with)S
+5 F
+1556(")S
+1 F
+(go)R
+462 1683(nly)U
+5 F
+(")R
+1 F
+584(\(or)S
+5 F
+674(")S
+1 F
+(KN)R
+5 F
+(")R
+1 F
+830(on)S
+910(CW)S
+1027(or)S
+1097(RTTY\).)S
+1618 1776(s)U
+432 1848(o)U
+582 1776(The)U
+697(Prioritized)S
+973(ACK)S
+1119(scheme)S
+1320(also)S
+1437(involve)S
+462 1848(verheard)U
+700(packets)S
+908(that)S
+1026(inhibit)S
+1211(other)S
+1361(stations)S
+1571(for)S
+1621 1920(-)U
+432 1992(b)U
+432 1920(speci\256ed)U
+669(periods)S
+869(of)S
+942(time.)S
+1108(In)S
+1181(this)S
+1290(case,)S
+1431(the)S
+1527(inhi)S
+462 1992(iting)U
+598(packet)S
+781(is)S
+846(a)S
+898(data)S
+1024(packet)S
+1207(and)S
+1318(the)S
+1416(protected)S
+1611 2064(y)U
+432 2136(n)U
+432 2064(station)U
+615(is)S
+677(sending)S
+886(an)S
+965(acknowledgem)S
+1330(ent)S
+1425(that)S
+1537(ma)S
+462 2136(ot)U
+545(be)S
+638(audible)S
+852(at)S
+931(the)S
+1040(inhibited)S
+1290(stations.)S
+1544(Full)S
+432 2280(\()U
+432 2208(protection)U
+724(against)S
+941(collisions)S
+1218(is)S
+1304(not)S
+1427(provided)S
+452 2280(data)U
+586(packets)S
+800(can)S
+917(still)S
+1041(collide\))S
+1259(but)S
+1368(the)S
+1474(perfor-)S
+432 2424(r)U
+432 2352(mance)U
+614(improvement)S
+960(due)S
+1071(to)S
+1142(the)S
+1239(lower)S
+1399(ACK)S
+1548(loss)S
+452 2424(ate)U
+543(is)S
+603(reported)S
+824(to)S
+891(be)S
+968(substantial.)S
+1611 2517(n)U
+432 2589(a)U
+582 2517(More)U
+743(formally,)S
+997(MACA)S
+1206(can)S
+1320(also)S
+1447(be)S
+1534(see)S
+459 2589(s)U
+519(a)S
+582(single-channe)S
+917(l,)S
+985(time-mul)S
+1207(tiplexed)S
+1438(form)S
+1591(of)S
+432 2733(B)U
+432 2661(Busy)U
+617(Tone)S
+802(Multiple)S
+1071(Access)S
+1302(\(BTMA\).)S
+1591(In)S
+472 2733(TMA,)U
+671(receive)S
+846(rs)S
+940(transmit)S
+5 F
+1189(")S
+1 F
+(busy)R
+1378(tones)S
+5 F
+(")R
+1 F
+1581(on)S
+1614 2805(e)U
+432 2877(a)U
+432 2805(secondary)U
+700(channels)S
+935(whenever)S
+1192(their)S
+1326(receive)S
+1501(rs)S
+1567(ar)S
+459 2877(ctive.)U
+626(This)S
+767(warns)S
+944(the)S
+1052(other)S
+1210(stations)S
+1427(in)S
+1507(range)S
+1621 2949(r)U
+432 3021(n)U
+432 2949(that)U
+551(they)S
+683(should)S
+871(not)S
+976(transmit)S
+1201(even)S
+1342(if)S
+1406(they)S
+1537(hea)S
+462 3021(othing)U
+639(on)S
+722(the)S
+819(data)S
+943(channel.)S
+1169(On)S
+1265(the)S
+1362(other)S
+1509(hand,)S
+432 3165(t)U
+432 3093(stations)U
+661(not)S
+783(hearing)S
+1009(busy)S
+1167(tones)S
+1338(are)S
+1456(free)S
+1594(to)S
+449 3165(ransmit)U
+654(even)S
+792(if)S
+853(there)S
+998(is)S
+1062(already)S
+1264(a)S
+1315(signal)S
+1483(on)S
+1567(the)S
+432 3309(a)U
+432 3237(data)U
+559(channel.)S
+788(Indeed,)S
+992(stations)S
+1201(need)S
+1340(not)S
+1442(pay)S
+1554(any)S
+459 3309(ttention)U
+670(at)S
+739(all)S
+825(to)S
+897(the)S
+996(data)S
+1122(channel)S
+1335(when)S
+1490(decid-)S
+1626 3381(.)U
+432 3453(A)U
+432 3381(ing)U
+537(to)S
+612(transmit;)S
+855(only)S
+990(the)S
+1092(busy)S
+1233(channel)S
+1448(matters)S
+475 3453(s)U
+532(long)S
+673(as)S
+757(the)S
+865(propagation)S
+1187(charact)S
+1362(eristics)S
+1567(are)S
+432 3597(t)U
+432 3525(identica)U
+624(l)S
+665(between)S
+890(the)S
+987(main)S
+1131(and)S
+1241(secondary)S
+1508(\(busy)S
+449 3597(one\))U
+608(channels,)S
+885(BTMA)S
+1109(is)S
+1200(effective)S
+1412(.)S
+1478(Unfor-)S
+1621 3669(-)U
+432 3741(q)U
+432 3669(tunately,)U
+672(the)S
+776(need)S
+919(to)S
+995(use)S
+1104(widely)S
+1297(separated)S
+1554(fre)S
+462 3741(uencies)U
+693(to)S
+790(avoid)S
+973(self-interfere)S
+1285(nce)S
+1418(tends)S
+1594(to)S
+1626 3813(.)U
+432 3885(B)U
+432 3813(make)U
+595(the)S
+701(link)S
+827(charact)S
+1002(eristics)S
+1205(less)S
+1327(symmetrica)S
+1609(l)S
+472 3885(TMA)U
+642(also)S
+776(obviously)S
+1050(increases)S
+1307(the)S
+1417(hardware)S
+432 4029(u)U
+432 3957(complexit)U
+674(y)S
+735(and)S
+853(spectrum)S
+1105(requirement)S
+1397(s)S
+1450(of)S
+1530(each)S
+462 4029(ser)U
+555(station.)S
+754(On)S
+850(the)S
+947(other)S
+1094(hand,)S
+1249(because)S
+1462(MACA)S
+1611 4101(d)U
+432 4173(d)U
+432 4101(uses)U
+563(the)S
+665(same)S
+817(channel)S
+1033(for)S
+1131(the)S
+5 F
+1233(")S
+1 F
+(busy)R
+1398(tone)S
+5 F
+(")R
+1 F
+1554(an)S
+462 4173(ata,)U
+578(paths)S
+735(between)S
+966(pairs)S
+1112(of)S
+1191(stations)S
+1404(are)S
+1507(much)S
+432 4245(more)U
+576(likely)S
+734(to)S
+801(be)S
+878(symmetrica)S
+1160(l.)S
+3 F
+1815 438(5.)U
+1900(Collisions)S
+2170(in)S
+2240(MACA)S
+1 F
+1965 531(U)U
+(nlike)R
+2214(BTMA,)S
+2487(however,)S
+2793(collisions)S
+3009 603(.)U
+1815 675(T)U
+1815 603(between)U
+2040(RTS)S
+2174(packets)S
+2379(can)S
+2487(still)S
+2602(occur)S
+2760(in)S
+2830(MACA)S
+1852 675(hese)U
+2022(are)S
+2159(minimiz)S
+2361(ed)S
+2481(with)S
+2650(a)S
+2739(randomized)S
+3007 747(t)U
+1815 819(u)U
+1815 747(exponential)U
+2143(back-off)S
+2392(strategy)S
+2628(similar)S
+2841(to)S
+2933(tha)S
+1845 819(sed)U
+1946(in)S
+2014(regular)S
+2206(CSMA.)S
+2431(Since)S
+2585(there)S
+2726(is)S
+2786(no)S
+2866(carrier)S
+1815 963(r)U
+1815 891(sensing)U
+2026(in)S
+2104(MACA,)S
+2329(each)S
+2471(station)S
+2663(simply)S
+2857(adds)S
+2997(a)S
+1835 963(andom)U
+2031(amount)S
+2244(to)S
+2323(the)S
+2429(minimum)S
+2696(interval)S
+2913(each)S
+2994 1035(n)U
+1815 1107(R)U
+1815 1035(station)U
+2005(is)S
+2074(required)S
+2304(to)S
+2380(wait)S
+2512(after)S
+2651(overhearing)S
+2967(a)S
+1855 1107(TS)U
+1952(or)S
+2029(CTS)S
+2166(packet.)S
+2365(As)S
+2457(in)S
+2530(regular)S
+2727(CSMA,)S
+2937(this)S
+3004 1179(-)U
+1815 1251(t)U
+1815 1179(strategy)U
+2036(minimiz)S
+2238(es)S
+2317(the)S
+2420(chance)S
+2617(that)S
+2737(several)S
+2937(sta)S
+1832 1251(ions)U
+1956(will)S
+2074(all)S
+2159(jump)S
+2307(on)S
+2391(the)S
+2488(channel)S
+2699(at)S
+2766(the)S
+2863(instant)S
+3007 1323(l)U
+1815 1395(w)U
+1815 1323(it)U
+1895(becomes)S
+2151(free.)S
+2305(The)S
+2444(extra)S
+2610(random)S
+2839(interva)S
+1858 1395(ould)U
+1987(be)S
+2066(an)S
+2145(integral)S
+2352(multiple)S
+2576(of)S
+2648(the)S
+5 F
+2743(")S
+1 F
+(slot)R
+2876(time)S
+5 F
+(")R
+1 F
+(,)R
+1815 1539(R)U
+1815 1467(and)U
+1923(in)S
+1991(MACA)S
+2191(the)S
+2286(slot)S
+2394(time)S
+2522(is)S
+2582(the)S
+2676(duration)S
+2897(of)S
+2967(an)S
+1855 1539(TS)U
+1982(packet.)S
+2212(If)S
+2309(two)S
+2456(RTS)S
+2622(packets)S
+2859(collide)S
+1815 1683(c)U
+1815 1611(nonetheless,)U
+2163(each)S
+2325(station)S
+2537(waits)S
+2715(a)S
+2793(randomly)S
+1842 1683(hosen)U
+2021(interval)S
+2245(and)S
+2371(tries)S
+2514(again,)S
+2698(doubling)S
+2950(the)S
+3009 1755(.)U
+1815 1827(E)U
+1815 1755(average)U
+2046(interval)S
+2274(on)S
+2377(each)S
+2531(successive)S
+2827(attempt)S
+1852 1827(ventually)U
+2099(one)S
+2207(of)S
+2278(them)S
+2420(will)S
+5 F
+2535(")S
+1 F
+(win)R
+5 F
+(")R
+1 F
+2696(\(i.e.,)S
+2826(transmit)S
+3007 1899(t)U
+1815 1971(t)U
+1815 1899(\256rst\))U
+1949(and)S
+2057(the)S
+2151(CTS)S
+2281(from)S
+2418(its)S
+2495(responder)S
+2752(will)S
+2866(inhibi)S
+1832 1971(he)U
+5 F
+1911(")S
+1 F
+(losing)R
+5 F
+(")R
+1 F
+2130(station)S
+2313(until)S
+2445(the)S
+2540(winning)S
+2758(station)S
+2940(can)S
+1815 2043(complete)U
+2057(its)S
+2134(dialogue.)S
+1965 2136(Even)U
+2113(though)S
+2304(collisions)S
+2559(can)S
+2666(occur)S
+2823(between)S
+2997 2208(e)U
+1815 2280(o)U
+1815 2208(RTS)U
+1964(packets,)S
+2199(MACA)S
+2417(still)S
+2547(has)S
+2666(the)S
+2779(advantag)S
+1845 2280(ver)U
+1958(CSMA)S
+2163(as)S
+2249(long)S
+2392(as)S
+2478(the)S
+2588(RTS)S
+2734(packets)S
+2950(are)S
+3001 2352(s)U
+1815 2424(l)U
+1815 2352(signi\256cantly)U
+2145(smaller)S
+2355(than)S
+2491(the)S
+2597(data)S
+2730(packets.)S
+2958(A)S
+1832 2424(ong)U
+1962(as)S
+2051(this)S
+2177(is)S
+2256(true,)S
+2404(collisions)S
+2674(between)S
+2914(RTS)S
+3004 2496(-)U
+1815 2568(s)U
+1815 2496(packets)U
+2029(are)S
+2136(much)S
+2303(less)S
+5 F
+2426(")S
+1 F
+(costly)R
+5 F
+(")R
+1 F
+2653(than)S
+2790(the)S
+2896(colli)S
+1838 2568(ions)U
+1968(that)S
+2088(would)S
+2267(otherwise)S
+2530(occur)S
+2693(between)S
+2923(data)S
+3001 2640(s)U
+1815 2712(f)U
+1815 2640(packets.)U
+2036(The)S
+2154(savings)S
+2358(in)S
+2429(collision)S
+2661(time)S
+2793(also)S
+2914(pay)S
+1835 2712(or)U
+1905(the)S
+1999(overhead)S
+2240(of)S
+2310(the)S
+2404(RTS)S
+2534(and)S
+2641(CTS)S
+2771(packets.)S
+2981 2805(A)U
+1815 2877(p)U
+1965 2805(As)U
+2070(mentioned)S
+2363(earlier,)S
+2571(the)S
+2683(basic)S
+2845(MAC)S
+1845 2877(rotocol)U
+2045(only)S
+2181(reduces)S
+2394(the)S
+2496(chances)S
+2715(of)S
+2793(collisions)S
+1815 3021(t)U
+1815 2949(involving)U
+2084(data)S
+2222(packets;)S
+2457(it)S
+2528(does)S
+2675(not)S
+2789(guarantee)S
+1832 3021(hat)U
+1940(they)S
+2078(will)S
+2206(never)S
+2374(occur.)S
+2557(This)S
+2698(is)S
+2772(because)S
+2997(a)S
+3004 3093(-)U
+1815 3165(t)U
+1815 3093(CTS)U
+1951(packet)S
+2135(requires)S
+2355(a)S
+2408(certain)S
+2599(minimum)S
+2860(signal)S
+1832 3165(o-noise)U
+2031(ratio)S
+2164(at)S
+2230(a)S
+2279(station)S
+2462(for)S
+2554(it)S
+2610(to)S
+2679(be)S
+2757(understood)S
+3007 3237(l)U
+1815 3309(m)U
+1815 3237(and)U
+1923(obeyed.)S
+2153(Even)S
+2298(if)S
+2356(the)S
+2451(station)S
+2633(powers)S
+2826(are)S
+2920(wel)S
+1862 3309(atched,)U
+2077(a)S
+2146(pair)S
+2282(of)S
+2374(stations)S
+2600(might)S
+2782(have)S
+2937(just)S
+1815 3453(i)U
+1815 3381(enough)U
+2012(of)S
+2082(a)S
+2129(path)S
+2253(between)S
+2474(them)S
+2615(to)S
+2682(allow)S
+2836(them)S
+2977(to)S
+1832 3453(nterfere)U
+2057(with)S
+2200(each)S
+2347(other's)S
+2550(reception)S
+2811(of)S
+2897(weak)S
+1815 3597(t)U
+1815 3525(signals,)U
+2021(but)S
+2122(not)S
+2223(enough)S
+2424(of)S
+2498(a)S
+2549(path)S
+2676(to)S
+2746(allow)S
+2903(them)S
+1832 3597(o)U
+1884(hear)S
+2010(each)S
+2143(other's)S
+2332(CTS)S
+2464(packets.)S
+2702(Although)S
+2950(the)S
+3001 3669(s)U
+1815 3741(a)U
+1815 3669(seriousness)U
+2114(of)S
+2189(this)S
+2301(problem)S
+2527(is)S
+2592(unknown,)S
+2855(it)S
+2914(doe)S
+1842 3741(ppear)U
+2025(that)S
+2164(the)S
+2286(power-controlled)S
+2749(version)S
+2974(of)S
+3 F
+1815 3957(6)U
+1 F
+1815 3813(MACA)U
+2014(discussed)S
+2264(later)S
+2392(would)S
+2562(greatly)S
+2750(reduce)S
+2931(it.)S
+3 F
+1845 3957(.)U
+1900(Bypassing)S
+2179(the)S
+2279(MACA)S
+2485(Dialogue)S
+1 F
+2997 4050(e)U
+1815 4122(t)U
+1965 4050(If)U
+2029(the)S
+2127(data)S
+2251(packets)S
+2455(are)S
+2552(of)S
+2625(comparable)S
+2930(siz)S
+1832 4122(o)U
+1914(the)S
+2040(RTS)S
+2202(packets,)S
+2450(the)S
+2576(overhead)S
+2849(of)S
+2950(the)S
+3001 4194(s)U
+1815 4266(c)U
+1815 4194(RTS/CTS)U
+2089(dialogue)S
+2334(may)S
+2475(be)S
+2569(excessive.)S
+2851(In)S
+2937(thi)S
+1842 4266(ase,)U
+1956(a)S
+2005(station)S
+2188(may)S
+2314(choose)S
+2503(to)S
+2572(bypass)S
+2757(the)S
+2853(normal)S
+EP
+%%Page: ? 4
+BP
+1 F
+60 Z
+432 510(d)U
+432 438(dialogue)U
+665(by)S
+750(simply)S
+939(sending)S
+1151(its)S
+1233(data)S
+1359(without)S
+1567(the)S
+1673 222(-)U
+1713(4)S
+1763(-)S
+462 510(ialogue.)U
+686(It)S
+754(must,)S
+917(of)S
+998(course,)S
+1201(still)S
+1323(defer)S
+1477(to)S
+1554(any)S
+432 582(RTS)U
+562(or)S
+632(CTS)S
+762(packets)S
+963(it)S
+1017(may)S
+1141(overhear.)S
+582 675(Of)U
+676(course,)S
+878(the)S
+982(bypass)S
+1175(mechanism)S
+1480(carries)S
+1621 747(r)U
+432 819(s)U
+432 747(with)U
+577(it)S
+649(the)S
+761(risk)S
+888(of)S
+975(a)S
+1039(collision.)S
+1299(However,)S
+1571(fo)S
+455 819(ome)U
+599(types)S
+766(of)S
+856(data)S
+997(packets)S
+1218(this)S
+1345(may)S
+1488(be)S
+1584(an)S
+1614 891(e)U
+432 963(a)U
+432 891(accept)U
+587(able)S
+721(tradeoff.)S
+960(An)S
+1066(example)S
+1304(might)S
+1478(be)S
+1567(th)S
+459 963(cknowledgeme)U
+824(nts)S
+941(in)S
+1035(a)S
+1108(sliding-window)S
+1531(TCP)S
+1618 1035(s)U
+432(transfer.)S
+677(TCP)S
+809(ACKs)S
+979(are)S
+1074(cumulati)S
+1286(ve,)S
+1379(so)S
+1453(the)S
+1548(los)S
+48 Z
+631 1017(3)U
+60 Z
+432 1107(o)U
+(f)R
+517(a)S
+579(single)S
+758(ACK)S
+919(causes)S
+1111(no)S
+1206(harm)S
+1365(as)S
+1450(long)S
+1591(as)S
+432 1251(T)U
+432 1179(another)U
+654(one)S
+782(gets)S
+919(through)S
+1146(before)S
+1340(the)S
+1454(sending)S
+469 1251(CP)U
+562(\256lls)S
+672(its)S
+749(window.)S
+3 F
+1174 1395(l)U
+432(7.)S
+517(Automatic)S
+807(Power)S
+991(Contro)S
+1 F
+582 1488(MACA)U
+810(lends)S
+986(itself)S
+1155(well)S
+1307(to)S
+1402(automati)S
+1614(c)S
+1614 1560(e)U
+432 1632(n)U
+432 1560(transmitte)U
+674(r)S
+729(power)S
+914(control.)S
+1135(To)S
+1236(support)S
+1450(this)S
+1571(w)S
+462 1632(eed)U
+569(some)S
+719(extra)S
+863(hardware:)S
+1126(a)S
+1175(D/A)S
+1300(converter)S
+1550(that)S
+432 1776(c)U
+432 1704(controls)U
+664(transmitte)S
+906(r)S
+963(power)S
+1150(level,)S
+1320(and)S
+1444(an)S
+1538(A/D)S
+459 1776(onverter)U
+697(that)S
+825(gives)S
+988(receive)S
+1163(d)S
+1229(signal)S
+1409(strengths.)S
+432 1848(By)U
+534(including)S
+793(calibrat)S
+975(ed)S
+5 F
+1063(")S
+1 F
+(S-meter)R
+5 F
+(")R
+1 F
+1335(readings)S
+1594(in)S
+48 Z
+1539 1830(4)U
+60 Z
+1611 1920(o)U
+432 1992(a)U
+432 1920(CTS)U
+566(packets,)S
+786(responders)S
+1070(could)S
+1228(help)S
+1356(initiat)S
+1498(ors)S
+1594(t)S
+459 1992(djust)U
+596(their)S
+727(power)S
+897(levels)S
+1058(accordingly.)S
+1614 2085(e)U
+432 2157(i)U
+582 2085(Each)U
+757(RTS/CTS)S
+1048(exchange)S
+1330(updates)S
+1567(th)S
+449 2157(nitiator's)U
+689(estimate)S
+913(of)S
+984(the)S
+1079(power)S
+1250(needed)S
+1442(to)S
+1510(reach)S
+1618 2229(s)U
+432 2301(\()U
+432 2229(a)U
+500(particula)S
+712(r)S
+773(responder)S
+1051(so)S
+1145(that)S
+1276(future)S
+1460(packet)S
+452 2301(including)U
+708(the)S
+810(data)S
+939(packet)S
+1125(in)S
+1200(the)S
+1302(current)S
+1500(dialo-)S
+1626 2373(.)U
+432 2445(E)U
+432 2373(gue\))U
+562(can)S
+668(be)S
+747(sent)S
+866(with)S
+995(only)S
+1124(the)S
+1220(necessary)S
+1476(power)S
+469 2445(ven)U
+595(RTS)S
+744(packets)S
+964(could)S
+1137(be)S
+1233(sent)S
+1368(at)S
+1450(reduced)S
+1614 2517(a)U
+432 2589(C)U
+432 2517(power,)U
+630(since)S
+787(their)S
+931(main)S
+1085(purpose)S
+1308(is)S
+1381(to)S
+1460(elicit)S
+472 2589(TS)U
+570(from)S
+715(the)S
+816(responder.)S
+1095(This)S
+1229(reduces)S
+1440(the)S
+1541(pro-)S
+432 2661(bability)U
+637(of)S
+707(collision)S
+935(between)S
+1156(RTS)S
+1286(packets.)S
+582 2754(By)U
+676(changing)S
+921(the)S
+1019(MACA)S
+1221(rule)S
+1338(to)S
+5 F
+1408(")S
+1 F
+(inhibit)R
+1614(a)S
+5 F
+432 2898(")U
+1 F
+432 2826(transmitte)U
+674(r)S
+719(when)S
+873(a)S
+924(CTS)S
+1058(packet)S
+1240(is)S
+1304(overheard)S
+5 F
+(")R
+1 F
+1594(to)S
+457 2898(temporaril)U
+709(y)S
+775(limit)S
+926(power)S
+1112(output)S
+1302(when)S
+1468(a)S
+1531(CTS)S
+1614 2970(e)U
+432 3042(c)U
+432 2970(packet)U
+626(is)S
+701(overheard,)S
+5 F
+(")R
+1 F
+1017(geographic)S
+1320(reuse)S
+1482(of)S
+1567(th)S
+459 3042(hannel)U
+667(can)S
+798(be)S
+902(signi\256cantly)S
+1246(improved.)S
+1558(For)S
+432 3186(s)U
+432 3114(example,)U
+676(if)S
+736(station)S
+920(X)S
+986(has)S
+1089(recently)S
+1307(sent)S
+1427(traf\256c)S
+1594(to)S
+455 3186(tation)U
+615(Y,)S
+695(it)S
+751(knows)S
+929(how)S
+1053(much)S
+1208(power)S
+1379(is)S
+1440(required)S
+6 F
+48 Z
+432 3246(hhhhhhhhhhhhhhhhhh)U
+1 F
+534 3315(The)U
+625(use)S
+706(of)S
+763(sliding)S
+910(windows)S
+1101(in)S
+1155(TCP)S
+1260(might)S
+1388(seem)S
+1503(to)S
+432 3375(c)U
+36 Z
+492 3300(3)U
+48 Z
+453 3375(ontradict)U
+640(the)S
+716(advice)S
+857(I)S
+890(gave)S
+997(several)S
+1149(years)S
+1267(ago)S
+1353(to)S
+1407(always)S
+432 3495(h)U
+432 3435(operate)U
+600(in)S
+665(stop-and-wait)S
+956(mode)S
+1090(\()S
+3 F
+(MAXFRAME)R
+1 F
+1425(1\))S
+1492(on)S
+456 3495(alf)U
+526(duplex)S
+676(channels.)S
+875(However,)S
+1083(that)S
+1174(conclusion)S
+1400(applied)S
+1524 3555(-)U
+432 3615(s)U
+432 3555(only)U
+536(to)S
+592(link)S
+685(level)S
+796(protocols;)S
+1006(TCP)S
+1112(is)S
+1162(an)S
+1225(end-to-end)S
+1450(tran)S
+451 3615(port)U
+548(protocol.)S
+739(Sliding)S
+896(windows)S
+1089(are)S
+1166(usually)S
+1323(appropriate)S
+432 3735(t)U
+432 3675(in)U
+486(a)S
+524(transport)S
+711(protocol)S
+887(even)S
+993(when)S
+1113(the)S
+1187(individual)S
+1396(hops)S
+1503(in)S
+445 3735(he)U
+506(network)S
+679(path)S
+777(are)S
+851(half)S
+941(duplex.)S
+1516 3804(o)U
+432 3864(b)U
+36 Z
+492 3789(4)U
+48 Z
+534 3804(Only)U
+647(one)S
+733(point)S
+848(in)S
+902(the)S
+976(S-meter)S
+1143(scale)S
+1254(really)S
+1378(needs)S
+1503(t)S
+456 3864(e)U
+497(calibrate)S
+660(d.)S
+731(This)S
+835(is)S
+886(the)S
+963(signal)S
+1096(level)S
+1207(just)S
+1295(high)S
+1399(enough)S
+1524 3924(-)U
+432 3984(p)U
+432 3924(to)U
+494(achieve)S
+664(an)S
+734(acceptabl)S
+913(e)S
+959(bit)S
+1034(error)S
+1152(rate.)S
+1260(A)S
+1320(more)S
+1442(com)S
+456 3984(letely)U
+608(calibrate)S
+771(d)S
+842(scale)S
+983(makes)S
+1151(it)S
+1223(easier)S
+1380(for)S
+1482(the)S
+1527 4044(t)U
+432 4104(e)U
+432 4044(transmitter)U
+659(to)S
+717(zero)S
+820(in)S
+878(on)S
+947(the)S
+1026(correct)S
+1179(power)S
+1320(setting,)S
+1479(bu)S
+453 4104(ven)U
+547(a)S
+592(simple)S
+5 F
+743(")S
+1 F
+(too)R
+848(strong/too)S
+1066(weak/OK)S
+5 F
+(")R
+1 F
+1294(indication)S
+1508(is)S
+1524 4164(r)U
+432 4224(l)U
+432 4164(enough)U
+592(for)S
+667(a)S
+707(transmitter)S
+931(to)S
+986(determine)S
+1194(the)S
+1270(correct)S
+1420(powe)S
+445 4224(evel)U
+540(by)S
+604(Newtonian)S
+830(iteration.)S
+60 Z
+1815 438(to)U
+1886(reach)S
+2040(Y.)S
+2121(If)S
+2184(X)S
+2250(overhears)S
+2507(station)S
+2691(Y)S
+2757(responding)S
+3007 510(t)U
+1815 582(r)U
+1815 510(with)U
+1943(a)S
+1991(CTS)S
+2122(to)S
+2190(a)S
+2238(third)S
+2373(station)S
+2554(Z,)S
+2626(then)S
+2750(X)S
+2813(need)S
+2947(no)S
+1835 582(emain)U
+2011(complete)S
+2233(ly)S
+2308(silent)S
+2467(for)S
+2564(the)S
+2665(required)S
+2893(inter-)S
+3009 654(,)U
+1815 726(s)U
+1815 654(val;)U
+1934(it)S
+1995(need)S
+2136(only)S
+2270(limit)S
+2412(its)S
+2496(transmitte)S
+2738(r)S
+2785(power)S
+2962(to)S
+1838 726(ay,)U
+1932(20)S
+2014(dB)S
+2148(below)S
+2317(the)S
+2413(level)S
+2553(needed)S
+2746(to)S
+2814(reach)S
+2966(Y.)S
+1815 798(D)U
+48 Z
+2102 708(5)U
+60 Z
+1858 798(uring)U
+2010(this)S
+2121(time)S
+2253(it)S
+2311(would)S
+2485(be)S
+2566(free)S
+2684(to)S
+2755(transmit)S
+2977(to)S
+2994 870(d)U
+1815 942(p)U
+1815 870(any)U
+1925(station)S
+2109(that)S
+2223(it)S
+2280(could)S
+2437(reach)S
+2591(with)S
+2720(that)S
+2833(reduce)S
+1845 942(ower)U
+1995(level,)S
+2158(because)S
+2379(its)S
+2466(signal)S
+2640(at)S
+2714(Y)S
+2787(would)S
+2967(be)S
+1815 1086(t)U
+1815 1014(overridden)U
+2104(by)S
+2192(Z's)S
+2299(signal.)S
+2485(\(This)S
+2639(is)S
+2706(analogous)S
+2977(to)S
+1832 1086(he)U
+1914(people)S
+2100(at)S
+2169(the)S
+2267(cocktail)S
+2483(party)S
+2631(continuing)S
+2913(their)S
+1815 1230(c)U
+1815 1158(conversations)U
+2184(in)S
+2269(whispers)S
+2520(instead)S
+2729(of)S
+2817(stopping)S
+1842 1230(ompletel)U
+2054(y)S
+2104(when)S
+2254(Tom)S
+2388(tells)S
+2509(Bob)S
+2629(to)S
+2696(go)S
+2776(ahead.\))S
+3004 1323(-)U
+1815 1395(l)U
+1965 1323(The)U
+2088(CTS)S
+2227(packets,)S
+2451(however,)S
+2701(pose)S
+2839(a)S
+2894(prob)S
+1832 1395(em.)U
+1950(In)S
+2029(addition)S
+2256(to)S
+2332(telling)S
+2516(the)S
+2619(initiat)S
+2761(or)S
+2839(to)S
+2914(send)S
+3007 1467(l)U
+1815 1539(i)U
+1815 1467(its)U
+1916(data,)S
+2076(the)S
+2194(CTS)S
+2347(must)S
+2507(inhibit)S
+2708(all)S
+2812(potentia)S
+1832 1539(nterferers)U
+2099(from)S
+2252(transmitti)S
+2484(ng.)S
+2595(It)S
+2667(may)S
+2806(therefore)S
+1815 1683(t)U
+1815 1611(need)U
+1953(more)S
+2101(power)S
+2275(than)S
+2403(that)S
+2518(needed)S
+2713(just)S
+2823(to)S
+2893(reach)S
+1832 1683(he)U
+1922(initiat)S
+2064(or)S
+2147(to)S
+2227(ensure)S
+2417(that)S
+2541(everyone)S
+5 F
+2795(")S
+1 F
+(gets)R
+2950(the)S
+2997 1755(e)U
+1815 1827(m)U
+1815 1755(message.)U
+5 F
+(")R
+1 F
+2096(\(A)S
+2196(CTS)S
+2342(packet)S
+2536(might)S
+2713(therefore)S
+2967(b)S
+1862 1827(ore)U
+1972(like)S
+2096(Tom)S
+2243(shouting)S
+5 F
+2483(")S
+1 F
+(Hey,)R
+2656(everyone,)S
+2924(shut)S
+1815 1971(t)U
+1815 1899(up!)U
+1919(I'm)S
+2030(trying)S
+2198(to)S
+2269(hear)S
+2397(Bob)S
+2521(speak!)S
+5 F
+(")R
+1 F
+2726(at)S
+2793(the)S
+2890(cock-)S
+1832 1971(ail)U
+1913(party)S
+2057(mentioned)S
+2332(earlier.\))S
+2997 2064(e)U
+1815 2136(g)U
+1965 2064(All)U
+2086(this)S
+2217(shouting)S
+2467(potential)S
+2679(ly)S
+2769(limits)S
+2950(th)S
+1845 2136(eographic)U
+2112(channel)S
+2329(reuse)S
+2485(ability)S
+2669(we've)S
+2844(worked)S
+2994 2208(n)U
+1815 2280(r)U
+1815 2208(so)U
+1901(hard)S
+2041(to)S
+2120(get.)S
+2241(But)S
+2360(all)S
+2453(is)S
+2525(not)S
+2634(lost.)S
+2788(A)S
+2863(statio)S
+1835 2280(esponding)U
+2112(to)S
+2188(an)S
+2274(RTS)S
+2413(with)S
+2549(a)S
+2605(CTS)S
+2744(can)S
+2857(always)S
+1815 2424(a)U
+1815 2352(expect)U
+1997(data)S
+2121(to)S
+2191(follow.)S
+2386(If)S
+2449(it)S
+2506(doesn't)S
+2706(arrive)S
+2870(within)S
+1873 2424(reasonable)U
+2162(period,)S
+2361(or)S
+2441(if)S
+2508(a)S
+2565(retransmitt)S
+2827(ed)S
+2914(RTS)S
+2994 2496(d)U
+1815 2568(o)U
+1815 2496(arrives)U
+2002(instead,)S
+2211(then)S
+2337(either)S
+2497(the)S
+2593(CTS)S
+2725(was)S
+2840(steppe)S
+1845 2568(n,)U
+1918(or)S
+1996(the)S
+2097(CTS)S
+2234(wasn't)S
+2421(heard)S
+2582(widely)S
+2773(enough)S
+2977(to)S
+1815 2712(b)U
+1815 2640(prevent)U
+2023(the)S
+2124(data)S
+2252(transmission)S
+2583(that)S
+2701(follows)S
+2907(from)S
+1845 2712(eing)U
+1975(stepped)S
+2185(on.)S
+2286(It)S
+2349(should)S
+2534(then)S
+2663(respond)S
+2878(to)S
+2950(the)S
+3007 2784(l)U
+1815 2856(l)U
+1815 2784(next)U
+1956(RTS)S
+2103(from)S
+2257(the)S
+2368(same)S
+2529(station)S
+2727(\(which)S
+2930(wil)S
+1832 2856(ikely)U
+1984(be)S
+2072(a)S
+2130(repeate)S
+2305(d)S
+2366(attempt)S
+2579(to)S
+2656(send)S
+2796(the)S
+2900(same)S
+3004 2928(r)U
+1815 3000(h)U
+1815 2928(data\))U
+1960(with)S
+2091(a)S
+2142(CTS)S
+2275(at)S
+2342(higher)S
+2519(power.)S
+2707(On)S
+2803(the)S
+2900(othe)S
+1845 3000(and,)U
+1975(if)S
+2039(a)S
+2093(responder)S
+2357(has)S
+2464(had)S
+2578(good)S
+2725(luck)S
+2856(in)S
+2930(get-)S
+3007 3072(t)U
+1815 3144(m)U
+1815 3072(ting)U
+1949(data)S
+2089(in)S
+2175(response)S
+2424(to)S
+2510(its)S
+2606(CTS)S
+2755(packets,)S
+2990(i)S
+1862 3144(ight)U
+1979(try)S
+2069(lowering)S
+2306(the)S
+2403(power)S
+2576(it)S
+2632(uses)S
+2757(to)S
+2826(transmit)S
+1815 3288(c)U
+1815 3216(them)U
+1962(in)S
+2034(order)S
+2186(to)S
+2258(help)S
+2387(limit)S
+2527(channel)S
+2740(loading.)S
+2961(Of)S
+1842 3288(ourse,)U
+2025(it)S
+2097(would)S
+2285(never)S
+2457(lower)S
+2632(its)S
+2727(CTS)S
+2874(power)S
+1815 3432(t)U
+1815 3360(below)U
+1991(the)S
+2094(level)S
+2241(it)S
+2304(knows)S
+2488(is)S
+2556(necessary)S
+2818(to)S
+2893(reach)S
+1832 3432(he)U
+1909(initiat)S
+2051(or.)S
+1965 3525(I)U
+(n)R
+2073(sum,)S
+2246(MACA)S
+2482(with)S
+2646(power)S
+2853(control)S
+1815 3669(p)U
+1815 3597(automati)U
+2027(cally)S
+2182(determine)S
+2424(s)S
+2483(the)S
+2593(exact)S
+2757(amount)S
+2974(of)S
+1845 3669(ower)U
+1988(required)S
+2211(for)S
+2303(each)S
+2436(RTS)S
+2568(and)S
+2677(data)S
+2800(transmis-)S
+1815 3813(e)U
+1815 3741(sion,)U
+1966(and)S
+2089(learns)S
+2268(by)S
+2363(experienc)S
+2598(e)S
+2660(\(i.e.,)S
+2804(trial)S
+2937(and)S
+1842 3813(rror\))U
+1973(the)S
+2068(power)S
+2239(required)S
+2461(for)S
+2552(CTS)S
+2682(transmissions.)S
+1815 3957(e)U
+1815 3885(It)U
+1892(also)S
+2029(appears)S
+2253(to)S
+2340(avoid)S
+2514(the)S
+2628(runaway)S
+2874(power)S
+1842 3957(scalation)U
+2081(that)S
+2196(can)S
+2304(occur)S
+2462(when)S
+2616(power)S
+2790(control)S
+2984(is)S
+6 F
+48 Z
+1815 4089(h)U
+1 F
+60 Z
+1815 4029(done)U
+1967(on)S
+2062(a)S
+2123(conventional)S
+2469(CSMA)S
+2672(channel)S
+2894(when)S
+6 F
+48 Z
+1839 4089(hhhhhhhhhhhhhhhhh)U
+1 F
+1917 4158(T)U
+(his)R
+2030(\256gure)S
+2170(depends)S
+2355(on)S
+2431(the)S
+2517(capture)S
+2684(ratio)S
+2798(of)S
+2865(the)S
+1815 4218(m)U
+36 Z
+1875 4143(5)U
+48 Z
+1852 4218(odems)U
+1993(in)S
+2046(use.)S
+EP
+%%Page: ? 5
+BP
+1 F
+60 Z
+432 510(t)U
+432 438(stations)U
+649(naively)S
+5 F
+860(")S
+1 F
+(turn)R
+1015(up)S
+1108(the)S
+1215(wick)S
+5 F
+(")R
+1 F
+1390(each)S
+1533(time)S
+1673 222(-)U
+1713(5)S
+1763(-)S
+449 510(hey)U
+569(fail)S
+683(to)S
+763(get)S
+870(through.)S
+1105(About)S
+1288(the)S
+1394(only)S
+1533(time)S
+1618 582(s)U
+432 654(w)U
+432 582(power)U
+617(escalat)S
+782(ion)S
+894(seems)S
+1076(possible)S
+1307(in)S
+1388(MACA)S
+1601(i)S
+475 654(hen)U
+583(an)S
+661(initiat)S
+803(or's)S
+917(receive)S
+1092(r)S
+1132(fails)S
+1256(so)S
+1329(it)S
+1383(is)S
+1443(not)S
+1540(able)S
+432 798(m)U
+432 726(to)U
+512(hear)S
+649(CTS)S
+792(responses)S
+1058(to)S
+1137(its)S
+1226(RTS)S
+1368(packets)S
+1581(no)S
+479 798(atter)U
+627(how)S
+770(much)S
+944(power)S
+1134(the)S
+1247(responder)S
+1523(uses.)S
+432 942(a)U
+432 870(This)U
+565(possibility)S
+842(should)S
+1028(be)S
+1111(handled)S
+1328(by)S
+1414(back-offs)S
+459 942(nd/or)U
+606(retry)S
+740(limits)S
+898(in)S
+965(the)S
+1059(dialogue)S
+1287(code.)S
+3 F
+432 1086(8.)U
+517(Applications)S
+860(for)S
+957(MACA)S
+1 F
+602 1179(If)U
+666(MACA)S
+869(proves)S
+1053(effective)S
+1265(,)S
+1304(it)S
+1362(may)S
+2 F
+1490(\256nally)S
+1 F
+1621 1251(-)U
+432 1323(w)U
+432 1251(make)U
+584(single-frequenc)S
+959(y)S
+1010(amateur)S
+1225(packet)S
+1403(radio)S
+1547(net)S
+475 1323(orks)U
+622(practica)S
+814(l.)S
+910(Although)S
+1180(it)S
+1257(would)S
+1450(still)S
+1584(be)S
+1626 1395(,)U
+432 1467(d)U
+432 1395(preferable)U
+707(for)S
+807(\256xed)S
+957(backbones)S
+1241(to)S
+1318(use)S
+1428(separate)S
+462 1467(edicate)U
+634(d)S
+687(channels)S
+921(or)S
+994(point-to-point)S
+1352(links)S
+1491(when-)S
+1621 1539(-)U
+432 1611(h)U
+432 1539(ever)U
+569(possible,)S
+814(the)S
+920(ability)S
+1107(to)S
+1186(create)S
+1363(usable,)S
+1564(ad)S
+462 1611(oc,)U
+568(single)S
+746(frequency)S
+1021(networks)S
+1275(could)S
+1443(be)S
+1534(very)S
+1621 1683(r)U
+432 1755(a)U
+432 1683(useful)U
+610(in)S
+688(certain)S
+883(situations.)S
+1159(These)S
+1333(include)S
+1541(use)S
+459 1755(ccess)U
+614(channels)S
+853(\(such)S
+1011(as)S
+1089(145.01)S
+1282(MHz)S
+1433(in)S
+1507(many)S
+1614 1827(e)U
+432 1899(o)U
+432 1827(areas\))U
+615(and)S
+741(in)S
+826(temporary)S
+1112(portable)S
+1348(and)S
+1473(mobil)S
+462 1899(perations)U
+706(where)S
+876(it)S
+933(is)S
+995(often)S
+1141(infeasible)S
+1398(to)S
+1467(coordi-)S
+432 2043(w)U
+432 1971(nate)U
+555(a)S
+604(multi-freque)S
+906(ncy)S
+1014(network)S
+1232(in)S
+1300(advance.)S
+1534(This)S
+475 2043(ould)U
+606(be)S
+687(especial)S
+882(ly)S
+953(useful)S
+1124(for)S
+1218(emergenc)S
+1453(y)S
+1507(situa-)S
+1624 2115(t)U
+432 2187(f)U
+432 2115(tions)U
+579(in)S
+656(remote)S
+854(areas)S
+1008(without)S
+1222(dedicate)S
+1424(d)S
+1483(packe)S
+452 2187(acilit)U
+574(ies.)S
+582 2280(A)U
+(n)R
+680(ideal)S
+823(emergenc)S
+1058(y)S
+1113(packet)S
+1296(radio)S
+1444(network)S
+1611 2352(n)U
+432 2424(a)U
+432 2352(would)U
+609(consist)S
+803(of)S
+880(identica)S
+1072(l)S
+1116(stations)S
+1327(operating)S
+1581(o)S
+518 2424(common)U
+788(frequency)S
+1088(\(to)S
+1213(maximiz)S
+1425(e)S
+1510(inter-)S
+1626 2496(.)U
+432 2568(T)U
+432 2496(changeabi)U
+677(lity\))S
+833(placed)S
+1045(in)S
+1146(arbitrary)S
+1408(locations)S
+469 2568(hese)U
+626(stations)S
+859(would)S
+1058(automati)S
+1270(cally)S
+1437(discover)S
+1621 2640(r)U
+432 2712(c)U
+432 2640(their)U
+583(neighbors)S
+860(and)S
+987(build)S
+1151(routing)S
+1365(and)S
+1491(powe)S
+459 2712(ontrol)U
+625(tables)S
+788(that)S
+901(maximiz)S
+1113(e)S
+1162(the)S
+1258(total)S
+1388(amount)S
+1591(of)S
+1626 2784(.)U
+432 2856(T)U
+432 2784(traf\256c)U
+603(that)S
+721(can)S
+831(be)S
+914(carried)S
+1108(in)S
+1181(the)S
+1281(coverage)S
+1525(area)S
+469 2856(o)U
+541(do)S
+643(this,)S
+787(routing)S
+1003(algorithms)S
+1302(would)S
+1493(use)S
+1614(a)S
+432 3000(m)U
+432 2928(different)U
+676(metric)S
+867(than)S
+1006(usual.)S
+1183(Instead)S
+1392(of)S
+1477(simply)S
+479 3000(inimizi)U
+651(ng)S
+734(the)S
+831(number)S
+1038(of)S
+1111(hops)S
+1247(needed)S
+1441(to)S
+1510(reach)S
+1611 3072(d)U
+432 3144(i)U
+432 3072(a)U
+482(given)S
+639(destination,)S
+942(the)S
+1038(routing)S
+1234(algorithm)S
+1491(woul)S
+449 3144(nstead)U
+642(minimiz)S
+844(e)S
+910(the)S
+2 F
+1023(total)S
+1172(transmitter)S
+1477(energy)S
+1 F
+1614 3216(e)U
+432 3288(d)U
+432 3216(required)U
+660(by)S
+747(all)S
+835(the)S
+936(stations)S
+1147(along)S
+1308(a)S
+1362(path)S
+1493(to)S
+1567(th)S
+462 3288(estination.)U
+735(Because)S
+959(of)S
+1032(the)S
+1128(laws)S
+1260(of)S
+1332(RF)S
+1427(propaga-)S
+432 3432(s)U
+432 3360(tion)U
+565(\(doubling)S
+838(the)S
+951(range)S
+1124(of)S
+1213(a)S
+1279(signal)S
+1462(in)S
+1547(free)S
+455 3432(pace)U
+600(requires)S
+828(four)S
+962(times)S
+1127(as)S
+1211(much)S
+1379(transmitte)S
+1621(r)S
+432 3576(m)U
+432 3504(power,)U
+632(and)S
+754(on)S
+849(the)S
+958(ground)S
+1163(it)S
+1232(may)S
+1371(take)S
+1507(much)S
+479 3576(ore\),)U
+623(this)S
+742(approach)S
+995(would)S
+1177(often)S
+2 F
+1332(increase)S
+1 F
+1567(the)S
+1621 3648(-)U
+432 3720(n)U
+432 3648(number)U
+640(of)S
+714(hops)S
+851(required)S
+1076(to)S
+1146(reach)S
+1300(a)S
+1350(given)S
+1507(desti)S
+462 3720(ation.)U
+643(However,)S
+923(overall)S
+1136(network)S
+1377(throughput)S
+432 3864(p)U
+432 3792(would)U
+622(increase)S
+860(because)S
+1090(the)S
+1203(lower)S
+1379(transmitte)S
+1621(r)S
+462 3864(ower)U
+616(levels)S
+791(would)S
+975(permit)S
+1166(more)S
+1323(simultaneous)S
+432 4008(n)U
+432 3936(transmissions)U
+789(to)S
+866(occur)S
+1029(in)S
+1105(different)S
+1342(parts)S
+1488(of)S
+1567(the)S
+462 4008(etwork)U
+659(without)S
+873(interferenc)S
+1135(e.)S
+1227(This)S
+1364(would)S
+1544(also)S
+1626 4080(,)U
+432 4152(a)U
+432 4080(minimiz)U
+634(e)S
+694(the)S
+801(power)S
+984(consumed)S
+1260(at)S
+1336(the)S
+1442(stations)S
+459 4152(nd)U
+561(this)S
+690(could)S
+866(be)S
+965(important)S
+1242(when)S
+1413(operating)S
+1611 4224(h)U
+432 4296(c)U
+432 4224(from)U
+585(batterie)S
+767(s.)S
+840(The)S
+969(direct,)S
+1157(minimum-hop)S
+1537(pat)S
+459 4296(ould)U
+593(still)S
+711(be)S
+795(provided)S
+1036(as)S
+1113(an)S
+1197(option)S
+1377(for)S
+1473(special)S
+1815 438(applicat)U
+2007(ions)S
+2127(requiring)S
+2368(minimum)S
+2623(delay.)S
+3 F
+1815 582(9.)U
+1900(Conclusion)S
+2206(and)S
+2322(Open)S
+2482(Questions)S
+1 F
+1965 675(At)U
+2059(the)S
+2167(moment,)S
+2413(MACA)S
+2625(is)S
+2698(just)S
+2818(an)S
+2908(idea.)S
+1815 819(t)U
+1815 747(Much)U
+1986(simulation)S
+2271(and)S
+2388(experiment)S
+2660(al)S
+2734(work)S
+2887(needs)S
+1832 819(o)U
+1884(be)S
+1963(done)S
+2102(to)S
+2171(answer)S
+2363(many)S
+2518(questions)S
+2766(about)S
+2921(how)S
+3004 891(f)U
+1815 963(t)U
+1815 891(well)U
+1947(it)S
+2009(will)S
+2131(really)S
+2296(work.)S
+2461(Here)S
+2605(are)S
+2706(just)S
+2820(some)S
+2974(o)S
+1832 963(he)U
+1915(questions)S
+2168(that)S
+2285(can)S
+2395(be)S
+2477(asked.)S
+2674(How)S
+2815(much)S
+2974(of)S
+1815 1107(s)U
+1815 1035(the)U
+1911(savings)S
+2113(from)S
+2252(avoided)S
+2464(collisions)S
+2716(in)S
+2784(MACA)S
+2984(is)S
+1838 1107(pent)U
+1995(on)S
+2108(RTS/CTS)S
+2398(overhead)S
+2672(given)S
+2859(typical)S
+1815 1251(H)U
+1815 1179(modem)U
+2020(turnaround)S
+2308(times)S
+2463(and)S
+2574(data)S
+2699(packet)S
+2880(sizes?)S
+1858 1251(ow)U
+1955(much)S
+2113(better)S
+2274(does)S
+2407(power-controlled)S
+2845(MACA)S
+2981 1323(w)U
+1815 1395(a)U
+1815 1323(perform)U
+2044(than)S
+2183(the)S
+2292(basic)S
+2451(MACA)S
+2665(scheme?)S
+2908(Ho)S
+1842 1395(bout)U
+1971(a)S
+2019(partial)S
+2195(impleme)S
+2407(ntation)S
+2596(of)S
+2667(power)S
+2838(control,)S
+1815 1539(e)U
+1815 1467(e.g.,)U
+1942(one)S
+2054(that)S
+2170(relies)S
+2326(on)S
+2411(trial-and-e)S
+2663(rror)S
+2778(instead)S
+2974(of)S
+1842 1539(xplicit)U
+2025(S-meter)S
+2244(feedback?)S
+2516(How)S
+2659(do)S
+2746(the)S
+2847(various)S
+1815 1683(r)U
+1815 1611(forms)U
+1999(of)S
+2093(MACA)S
+2315(behave)S
+2529(as)S
+2622(modem)S
+2846(capture)S
+1835 1683(atios)U
+1982(change?)S
+2213(How)S
+2361(serious)S
+2563(is)S
+2635(the)S
+2741(problem)S
+2974(of)S
+1815 1827(A)U
+1815 1755(interferenc)U
+2077(e)S
+2131(from)S
+2275(stations)S
+2486(just)S
+2600(below)S
+2773(threshold?)S
+1858 1827(nd)U
+1942(how)S
+2069(does)S
+2203(MACA)S
+2405(compare)S
+2636(in)S
+2706(overall)S
+2897(spec-)S
+1815 1971(a)U
+1815 1899(tral)U
+1942(ef\256ciency)S
+2225(with)S
+2377(other)S
+2546(improved)S
+2822(multiple)S
+1842 1971(ccess)U
+1994(methods,)S
+2237(such)S
+2371(as)S
+2445(conventional)S
+2781(CSMA)S
+2974(or)S
+1815 2115(r)U
+1815 2043(CSMA/CD)U
+2154(operation)S
+2451(through)S
+2707(full)S
+2860(duplex)S
+1835 2115(epeate)U
+1990(rs?)S
+2100(I)S
+2140(invite)S
+2298(anyone)S
+2492(interested)S
+2747(in)S
+2814(pursuing)S
+1815 2187(these)U
+1959(topics)S
+2123(to)S
+2190(contact)S
+2385(me.)S
+EP
+%%Trailer
+pscatsave end restore
+%%Pages: 5
